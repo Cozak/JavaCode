@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/imageView_background_mydialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/_0002_customalert" />
+
+    <!-- Line 1 -->
+
+    <ImageView
+        android:id="@+id/imageView_warning_mydialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imageView_background_mydialog"
+        android:layout_alignTop="@id/imageView_background_mydialog"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/_0002__down" />
+
+    <TextView
+        android:id="@+id/textView_title_mydialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView_warning_mydialog"
+        android:layout_alignTop="@id/imageView_background_mydialog"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="你是否愿意和"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="22dp" >
+    </TextView>
+
+    <!-- Line 2 -->
+
+    <TextView
+        android:id="@+id/whoTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/imageView_background_mydialog"
+        android:layout_marginTop="40dp"
+        android:text="xxx"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="22dp" />
+       <!-- Line 3 -->
+     <TextView
+        android:id="@+id/tailTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imageView_background_mydialog"
+        android:layout_marginTop="70dp"
+        android:text="在一起"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="22dp" />
+    
+    <!-- Line 4 -->
+     <ImageButton
+        android:id="@+id/yesbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView_background_mydialog"
+        android:layout_alignLeft="@+id/imageView_background_mydialog"
+        android:layout_marginBottom="10dp"
+       
+        android:background="@drawable/_0001_yes"
+        />
+
+    <ImageButton
+        android:id="@+id/nobtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView_background_mydialog"
+        android:layout_alignRight="@+id/imageView_background_mydialog"
+        android:layout_marginBottom="10dp"
+      
+        android:background="@drawable/_0000_no"
+        />
+
+</RelativeLayout>

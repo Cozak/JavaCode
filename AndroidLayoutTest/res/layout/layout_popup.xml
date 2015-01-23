@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RadioGroup android:id="@+id/popup_radio_group">
+    	<RadioButton
+    	    android:id="@+id/popup_radio_but_01"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="Male"
+    	    />
+    	<RadioButton
+    	    android:id="@+id/popup_radio_but_02"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="Female"
+    	    />    
+    </RadioGroup>
+
+</TableLayout>

@@ -1,0 +1,371 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_topFl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background_blue"
+    tools:context=".baseActivity.BroadCast" >
+
+   
+<RelativeLayout 
+    android:id="@+id/main_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:gravity="top" >
+<ImageView
+        android:id="@+id/configBtn"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/main_menu_selector" />
+	<ImageView
+        android:id="@+id/chatBtn"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/main_chat_selector" />
+<!--     <ImageButton -->
+<!--         android:id="@+id/configBtn" -->
+<!--         android:layout_width="@dimen/configBtn_width" -->
+<!--         android:layout_height="@dimen/configBtn_height" -->
+<!--         android:layout_marginTop="@dimen/configBtn_marginTop" -->
+<!--         android:layout_marginLeft="@dimen/configBtn_marginLeft" -->
+<!--         android:background="@drawable/main_menu_selector" /> -->
+<!--   <ImageButton -->
+<!--         android:id="@+id/chatBtn" -->
+<!--         android:layout_width="@dimen/chatBtn_width" -->
+<!--         android:layout_height="@dimen/chatBtn_height" -->
+<!--         android:layout_alignParentRight="true" -->
+<!--         android:layout_marginRight="@dimen/chatBtn_marginRight" -->
+<!--         android:layout_marginTop="@dimen/chatBtn_marginTop" -->
+<!--         android:background="@drawable/main_chat_selector" /> -->
+    <ImageButton
+        android:id="@+id/guidetomatchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/guidetomatchBtn_height"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/configBtn"
+        android:visibility="invisible" />
+
+  
+
+    <ImageView
+        android:id="@+id/weatherBtn"
+        android:layout_width="@dimen/weatherBtn_width"
+        android:layout_height="@dimen/weatherBtn_height"
+        android:layout_marginLeft="@dimen/weather_marginLeft"
+        android:layout_marginTop="@dimen/weather_marginTop"
+        android:scaleType="fitStart"
+        android:src="@drawable/main_sun" />
+
+    <Button
+        android:id="@+id/dailyBtn"
+        android:layout_width="@dimen/dailyBtn_width"
+        android:layout_height="@dimen/dailyBtn_height"
+        android:layout_marginLeft="@dimen/dailyBtn_marginLeft"
+        android:layout_marginTop="@dimen/daily_marginTop"
+        android:background="@drawable/maindiarybutton"
+        android:visibility="visible" />
+	
+	<RelativeLayout 
+	    android:id="@+id/annLayout"
+        android:layout_width="@dimen/annBtn_width"
+        android:layout_height="@dimen/annBtn_height"
+        android:layout_marginLeft="@dimen/ann_marginLeft"
+        android:layout_marginTop="@dimen/ann_marginTop"
+        android:background="@drawable/maincalendarbutton2"
+        android:visibility="visible" >
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/lampBtn"
+        android:layout_width="@dimen/lampBtn_width"
+        android:layout_height="@dimen/lampBtn_height"
+        android:layout_marginLeft="@dimen/lamp_marginLeft"
+        android:layout_marginTop="@dimen/lamp_marginTop"
+        android:background="@drawable/brownlampoff"
+        android:visibility="visible" />
+<!--  android:layout_width="@dimen/pictureBtn_width"
+ android:src="@drawable/main_album_blue" android:layout_width="@dimen/pictureBtn_width"
+        android:layout_height="@dimen/pictureBtn_height" 
+        android:layout_height="@dimen/pictureBtn_height" -->
+    <!--  android:background="@drawable/bluelampoff" -->
+    <ImageView
+        android:id="@+id/pictureBtn"
+         android:layout_width="@dimen/pictureBtn_width"
+        android:layout_height="@dimen/pictureBtn_height" 
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/picture_marginRight"
+        android:layout_marginTop="@dimen/picture_marginTop"
+         android:src="@drawable/bluealbum"
+        android:visibility="visible" 
+        />
+    <Button
+        android:id="@+id/mapBtn"
+        android:layout_width="@dimen/mapBtn_width"
+        android:layout_height="@dimen/mapBtn_height"
+        android:layout_marginLeft="@dimen/map_marginLeft"
+        android:layout_marginTop="@dimen/map_marginTop"
+        android:background="@drawable/mainmapbutton2"
+        android:visibility="visible" />
+
+
+    <RelativeLayout
+        android:id="@+id/middleflag"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+    </RelativeLayout>
+    
+   
+ <RelativeLayout
+         android:id="@+id/stand_boy_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/stand_boy_marginBottom"
+        android:layout_toLeftOf="@+id/middleflag"
+        android:scaleX="@dimen/stand_boy_scale"
+        android:scaleY="@dimen/stand_boy_scale" > 
+<!-- <include -->
+<!--             android:id="@+id/stand_boy_view" -->
+<!--             layout="@layout/single_boy_stand" -->
+<!--             android:visibility="visible"  -->
+<!--             />  -->
+       
+    </RelativeLayout>
+    
+   
+
+    <RelativeLayout
+         android:id="@+id/stand_girl_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/stand_girl_marginBottom"
+        android:layout_toRightOf="@+id/middleflag"
+        android:scaleX="@dimen/stand_girl_scale"
+        android:scaleY="@dimen/stand_girl_scale" >
+<!--   	<include -->
+<!--             android:id="@+id/stand_girl_view" -->
+<!--             layout="@layout/single_girl_stand" -->
+<!--             android:visibility="visible" /> -->
+        
+     
+    </RelativeLayout>
+    
+     
+    
+
+
+    <RelativeLayout
+        android:id="@+id/MyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/person_portrait_marginBottom"
+        android:layout_toLeftOf="@+id/middleflag"
+        android:scaleX="@dimen/person_portrait_scale"
+        android:visibility="invisible"
+        android:scaleY="@dimen/person_portrait_scale" >
+        <include
+            layout="@layout/mainboy" /> 
+    </RelativeLayout>
+    
+
+    <RelativeLayout
+        android:id="@+id/GirlView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/girl_portrait_marginBottom"
+        android:layout_toRightOf="@+id/middleflag"
+        android:scaleX="@dimen/girl_portrait_scale"
+        android:visibility="invisible"
+        android:scaleY="@dimen/girl_portrait_scale" >
+        <include
+          
+            layout="@layout/maingirl"
+            /> 
+      
+    </RelativeLayout>
+    
+
+    <RelativeLayout
+          android:id="@+id/girl_sit_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/girl_sit_marginBottom"
+        android:layout_toRightOf="@+id/middleflag"
+        android:scaleX="@dimen/girl_sit_scale"
+        android:scaleY="@dimen/girl_sit_scale" >
+<!-- 	<include -->
+<!--         android:id="@+id/girlPortrait"  -->
+<!--         layout="@layout/single_girl_sit"  -->
+<!--         android:visibility="gone" -->
+<!--         />   -->
+      
+    </RelativeLayout>
+
+    <RelativeLayout
+         android:id="@+id/boy_sit_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/boy_sit_marginBottom"
+        android:layout_toLeftOf="@+id/middleflag"
+        android:scaleX="@dimen/boy_sit_scale"
+        android:scaleY="@dimen/boy_sit_scale"
+         >    
+   
+<!--       <include -->
+<!--             layout="@layout/single_boy_sit" -->
+<!--             android:visibility="gone" -->
+<!--             />  -->
+       </RelativeLayout> 
+            
+  <!--   <ImageButton
+        android:id="@+id/staticgirlChatbubblePos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/boy_sit_marginBottom"
+        android:layout_toLeftOf="@+id/middleflag"
+        android:scaleX="@dimen/boy_sit_scale"
+        android:scaleY="@dimen/boy_sit_scale"
+        android:layout_alignTop="@id/GirlView"
+        android:layout_toLeftOf="@id/GirlView"
+        android:background="@drawable/actiongirlchattoright"
+         />
+
+    <ImageButton
+        android:id="@+id/staticboyChatbubblePos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/MyView"
+        android:layout_toRightOf="@id/MyView"
+        android:background="@drawable/actionboychattoleft"
+        android:visibility="gone" />
+    
+     <ImageButton
+        android:id="@+id/sitgirlChatbubblePos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/GirlView"
+        android:layout_toLeftOf="@id/GirlView"
+        android:background="@drawable/actiongirlchattoright"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/sitboyChatbubblePos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/MyView"
+        android:layout_toRightOf="@id/MyView"
+        android:background="@drawable/actionboychattoleft"
+        android:visibility="gone" /> -->
+
+    <com.minus.actionsystem.MenuItemView
+        android:id="@+id/boyMenuItemView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <com.minus.actionsystem.MenuItemView
+        android:id="@+id/girlboyMenuItemView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+    
+    
+    
+     
+ 
+     <FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true" 
+    android:id="@+id/boycustomActionRL"
+      android:layout_margin="1dp"
+      android:visibility="invisible"
+    >
+    <Button 
+    android:id="@+id/boycustomAction"
+    
+    android:background="@drawable/boycustombubble"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:layout_marginRight="2dp"
+   
+    />
+    <Button
+    android:id="@+id/boycustomActionTop"
+    android:background="@drawable/transpacustombubble1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="2dp"
+    android:alpha="0"
+     />
+    
+     </FrameLayout>
+     
+    <FrameLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true" 
+    android:layout_above="@+id/boycustomActionRL"
+    android:id="@+id/girlcustomActionRL"
+    android:visibility="invisible"
+    android:layout_margin="1dp"
+    >
+    <Button 
+    android:id="@+id/girlcustomAction"
+    android:background="@drawable/girlcustombubble"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:layout_marginRight="2dp"
+     />
+    <Button
+    android:id="@+id/girlcustomActionTop"
+    android:background="@drawable/transpacustombubble1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="2dp"
+    android:alpha="0"
+     />
+    
+    </FrameLayout>
+    
+     <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/singsleep"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" >
+        <include   
+            layout="@layout/single_sleep"
+             />
+       </RelativeLayout>
+ 
+   
+</RelativeLayout>
+
+ <RelativeLayout 
+    android:id="@+id/main_sex"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >  
+     
+ </RelativeLayout>
+ 
+</FrameLayout>

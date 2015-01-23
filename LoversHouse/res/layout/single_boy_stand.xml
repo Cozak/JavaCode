@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@null" >
+
+    <FrameLayout
+        android:id="@+id/angry_boy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/angry_boy_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boy_body_angry" />
+
+        <ImageView
+            android:id="@+id/Angryboy_cloth01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boy_angrycloth01"
+            android:visibility="visible" />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Angryboy_cloth02" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_angrycloth02" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Angryboy_cloth03" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_angrycloth03" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Angryboy_cloth04" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_angrycloth04" -->
+        <!-- android:visibility="visible" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Angryboy_cloth05" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_angrycloth05" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Angryboy_cloth06" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_angrycloth06" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Angryboy_cloth07" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_angrycloth07" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Angryboy_cloth08" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_angrycloth08" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Angryboy_cloth09" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_angrycloth09" -->
+        <!-- android:visibility="gone" /> -->
+
+        <ImageView
+            android:id="@+id/angry_boy_hair01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boy_back_hair01" />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/angry_boy_hair02" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_back_hair02" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/angry_boy_hair03" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_back_hair03" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/angry_boy_hair04" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_back_hair04" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/angry_boy_hair05" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_back_hair05" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/angry_boy_hair06" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_back_hair06" -->
+        <!-- android:visibility="gone" /> -->
+
+        <ImageView
+            android:id="@+id/Angryboy_foot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/angryboy_foot" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/boy_miss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/missing_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/miss_heart" />
+
+        <ImageView
+            android:id="@+id/missing_boy_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boy_miss_body" />
+
+        <ImageView
+            android:id="@+id/missing_boy_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boy_miss_head" />
+
+        <ImageView
+            android:id="@+id/boy_miss_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/missboy_eye" />
+
+        <ImageView
+            android:id="@+id/boy_miss_cloth01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boy_miss_clothes01" />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_miss_cloth02" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_miss_clothes02" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_miss_cloth03" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_miss_clothes03" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_miss_cloth04" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_miss_clothes04" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_miss_cloth05" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_miss_clothes05" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_miss_cloth06" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_miss_clothes06" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_miss_cloth07" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_miss_clothes07" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_miss_cloth08" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_miss_clothes08" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_miss_cloth09" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_miss_clothes09" -->
+        <!-- android:visibility="gone" /> -->
+
+        <ImageView
+            android:id="@+id/boy_miss_deco01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boy_stand_decoration01"
+            android:visibility="visible" />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_miss_deco02" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_stand_decoration02" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_miss_deco03" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_stand_decoration03" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_miss_deco04" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_stand_decoration04" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_miss_deco05" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_stand_decoration05" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_miss_deco06" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_stand_decoration06" -->
+        <!-- android:visibility="gone" /> -->
+
+        <ImageView
+            android:id="@+id/boy_miss_hair01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boy_miss_hair01"
+            android:visibility="visible" />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_miss_hair02" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_miss_hair02" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_miss_hair03" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_miss_hair03" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_miss_hair04" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_miss_hair04" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_miss_hair05" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_miss_hair05" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_miss_hair06" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:src="@drawable/boy_miss_hair06" -->
+        <!-- android:visibility="gone" /> -->
+
+        <ImageView
+            android:id="@+id/missing_boy_hand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boy_miss_hand"
+            android:visibility="visible" />
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/gesturepwd_create_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="请绘制手势密码"
+        android:textColor="@color/red"
+        android:shadowColor="#b3ffffff"
+        android:shadowRadius="1.0"
+        android:textSize="16.0sp" />
+    
+    <com.minus.lovershouse.setting.LockPatternView 
+        android:id="@+id/gesturepwd_pattern"
+        android:layout_width="288.0dip"
+        android:layout_height="288.0dip"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/gesturepwd_create_text"
+        android:layout_centerHorizontal="true"
+        ></com.minus.lovershouse.setting.LockPatternView>"
+
+</RelativeLayout>

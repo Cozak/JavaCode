@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff" >
+    <FrameLayout
+        android:id="@+id/calendar_detail_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/memoday_xqnavigationbar_ios6" />
+
+        <ImageView
+            android:id="@+id/calendar_detail_backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="@dimen/weather_back_marginLeft"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_button_selector" />
+
+        <ImageView
+            android:id="@+id/calendar_detail_confirmbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/weather_back_marginLeft"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/memoday_complete_selector" />
+    </FrameLayout>
+    <!--  -->
+
+    <RelativeLayout
+        android:id="@+id/calendar_detail_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendar_detail_top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/memoday_detail_background_3line" >
+
+        <ImageView
+            android:id="@+id/calendar_detail_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/memoday_detail_dot" />
+
+        <EditText
+            android:id="@+id/calendar_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/calendar_detail_dot"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="aaa"
+            android:textColor="#f56e9c"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/calendar_detail_date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="2014-06-01"
+            android:textColor="#f69cbb"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/calendar_detail_date_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calendar_detail_date"
+            android:layout_marginLeft="80dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="2 day left"
+            android:textColor="#a8a1a3"
+            android:textSize="10.5sp" />
+
+        <TextView
+            android:id="@+id/calendar_detail_prompt_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="110dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="提醒方式:"
+            android:textColor="#f69cbb"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/calendar_detail_prompt_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calendar_detail_prompt_title"
+            android:layout_marginLeft="80dp"
+            android:text="2 day left"
+            android:textColor="#a8a1a3"
+            android:textSize="10.5sp" />
+
+        <Spinner
+            android:id="@+id/calendar_detail_prompt_spinner"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:entries="@array/calendar_prompt_policy"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/buttom640_1136"
+    
+    >  
+    <RelativeLayout 
+        android:id="@+id/rl_layout"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:gravity="center_vertical" 
+  			android:background="@drawable/create_an_account_head640_94" 
+  			>
+
+  			<ImageButton
+  			    android:id="@+id/btn_setappback"
+  			    android:layout_width="wrap_content"
+  			    android:layout_height="wrap_content"
+  			    android:layout_alignParentLeft="true"
+  			    android:layout_alignParentTop="true"
+  			    android:background="@drawable/_0000_back" />
+  			<ImageButton
+  			    android:id="@+id/btn_setnext"
+  			    android:layout_width="wrap_content"
+  			    android:layout_height="wrap_content"
+  			    android:layout_alignParentRight="true"
+  			    android:layout_alignParentTop="true"
+  			    android:background="@drawable/_0001_next" />
+      		      
+		</RelativeLayout>
+		
+      <RelativeLayout 
+            android:id="@+id/setappearancehead_layout"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:gravity="center_vertical" 
+  			android:layout_below="@id/rl_layout" >
+           <LinearLayout 
+               android:id="@+id/main"
+               android:layout_width="fill_parent"
+  			    android:layout_height="wrap_content"
+  			    android:orientation="vertical">
+           <FrameLayout 
+                  android:id="@+id/myFl"
+                  android:layout_width="wrap_content"
+  			      android:layout_height="wrap_content"
+                  android:layout_gravity="center">
+               
+             
+              <ImageView 
+                  android:id="@+id/girlImg"
+                  android:layout_width="wrap_content"
+  			      android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+  			      android:src="@drawable/boy"
+                  />
+             <RelativeLayout 
+             	android:id="@+id/de_layout"
+  			 	android:layout_width="fill_parent"
+  				 android:layout_height="wrap_content"> 
+
+
+             <ImageView
+                 android:id="@+id/hairAIV"
+                 android:layout_centerHorizontal="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/g21"
+                 />
+             
+              <ImageView
+                 android:id="@+id/hairAIVFlag"
+                 android:layout_width="2dp"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/b21"
+                 android:layout_toRightOf="@id/hairAIV"
+                 android:visibility="invisible" />
+             
+             <ImageView
+            android:id="@+id/hairBIV"
+            android:background="@drawable/b22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+            <ImageView
+            android:id="@+id/hairCIV"
+            android:background="@drawable/b23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:visibility="gone"/>
+
+
+    		<ImageView
+       			 android:id="@+id/bodyAIV"
+      		     android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                android:layout_below="@id/hairAIVFlag"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/b31"
+                     android:layout_marginTop="@dimen/setappearancebody"
+               />
+    
+    <ImageView
+        android:id="@+id/bodyBIV"
+        android:background="@drawable/b32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_below="@id/hairAIVFlag"
+          android:layout_marginTop="@dimen/setappearancebody"
+        android:layout_centerHorizontal="true"
+          android:visibility="gone"/>
+      <ImageView
+        android:id="@+id/bodyCIV"
+        android:background="@drawable/b33"
+        android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_below="@id/hairAIVFlag"
+        android:layout_marginTop="@dimen/setappearancebody"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+      </RelativeLayout>
+           </FrameLayout>
+              
+              <ListView 
+                  android:id="@+id/decorateLv"
+                  android:layout_width="wrap_content"
+  			      android:layout_height="fill_parent"
+  			    
+  			      android:layout_gravity="left"
+  			      android:layout_marginLeft="5dp"
+  			      android:scrollingCache="false"
+    	          android:fadingEdge="none"
+    	          android:cacheColorHint="#000000"
+    	          android:divider="#ffffff"
+    	          android:dividerHeight="2dp">
+                  
+              </ListView>
+               
+               
+               
+           </LinearLayout>
+      		      
+		</RelativeLayout>
+		
+ 
+     
+
+	</RelativeLayout>
+

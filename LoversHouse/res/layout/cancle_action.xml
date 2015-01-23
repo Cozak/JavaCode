@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cancleAction"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    style="@style/MyDialogStyle"
+    android:background="@drawable/whether_end_action">
+    
+    <Button
+        android:id="@+id/end_action_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/yes_button_selector"/>
+    
+    <Button
+        android:id="@+id/end_action_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/no_button_selector"/>
+
+</RelativeLayout>

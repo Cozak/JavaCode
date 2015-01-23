@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/gallery_operatePicText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actionsheet_top_normal"
+        android:gravity="center"
+        android:text="您希望对这张相片做些什么？"
+        android:textColor="#8F8F8F"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/galleryShowInMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actionsheet_bottom_selector"
+        android:gravity="center"
+        android:text="在首页中显示"
+        android:textColor="#FD4A2E"
+        android:textSize="16sp" />
+        <TextView
+           android:id="@+id/gallerySaveImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actionsheet_bottom_selector"
+        android:gravity="center"
+        android:text="保存在手机"
+        android:textColor="#FD4A2E"
+        android:textSize="16sp" />
+
+        <TextView
+       android:id="@+id/galleryDeleteImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actionsheet_bottom_selector"
+        android:gravity="center"
+        android:text="删除相片"
+        android:textColor="#FD4A2E"
+        android:textSize="16sp" />
+
+    <TextView
+       android:id="@+id/galleryCancleOperation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/actionsheet_single_selector"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#037BFF"
+        android:textSize="16sp" />
+
+</LinearLayout>
+
+
+

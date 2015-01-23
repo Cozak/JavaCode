@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/signup_2_background"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/appearanceset_navigation" />
+
+        <ImageView
+            android:id="@+id/btn_setappback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="@dimen/weather_back_marginLeft"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_button_selector" />
+
+        <ImageView
+            android:id="@+id/btn_setfinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/weather_back_marginLeft"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/memoday_complete_selector" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/vertical_middle_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/setappearancehead_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/vertical_middle_line"
+        android:layout_below="@id/rl_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/setappBoyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleX="@dimen/setappearance_person_portrait"
+            android:scaleY="@dimen/setappearance_person_portrait" >
+
+            <!-- android:layout_marginTop="@dimen/setappearance_person_portrait_marginTop" -->
+
+            <include
+                layout="@layout/person_portrait"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setappGirlView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleX="@dimen/setappearance_girl_portrait"
+            android:scaleY="@dimen/setappearance_girl_portrait"
+            android:visibility="gone" >
+
+            <!-- android:layout_marginTop="@dimen/setappearance_girl_portrait_marginTop" -->
+
+            <include layout="@layout/girl_portrait" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mSetAppRL"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/vertical_middle_line"
+        android:layout_gravity="left"
+        android:layout_marginBottom="1dp"
+        android:padding="20dp">
+
+        <!-- android:layout_marginTop="@dimen/decorate_marginTop" -->
+
+        <ListView
+            android:id="@+id/decorateLv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:cacheColorHint="#000000"
+            android:divider="#ffffff"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:scrollingCache="false" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

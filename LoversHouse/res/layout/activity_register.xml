@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.minus.lovershouse.util.ResizeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerRL"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/a_0000_background"
+    android:fitsSystemWindows="true"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".baseActivity.BroadCast" >
+
+    <RelativeLayout
+        android:id="@+id/reg_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/pink"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+		
+        <ImageView 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:src="@drawable/navigation"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/reg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/reg_back_marginLeft"
+            android:background="@drawable/back_button_selector"
+            android:clickable="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/step1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <!-- 表格布局，包括用户名和邮箱 -->
+
+        <TableLayout
+            android:id="@+id/regInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1" >
+
+            <!-- 表格的第一行，账号文本和输入框，黑色粗体字，重心靠右，四周扩充5个像素 -->
+
+            <TableRow>
+
+                <!-- "账号"输入框，文本超出TextView的宽度的情况下，出现横拉条 -->
+
+                <RelativeLayout
+                    android:id="@+id/nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/nicknameEt"
+                        android:layout_width="@dimen/nicknameEt_width"
+                        android:layout_height="@dimen/nicknameEt_height"
+                        android:layout_marginLeft="@dimen/nicknameEt_marginLeft"
+                        android:layout_marginTop="@dimen/nicknameEt_marginTop"
+                        android:background="@drawable/a_0000_inputbox"
+                        android:hint="用户名"
+                        android:maxLength="10"
+                        android:paddingLeft="10dp"
+                        android:scrollHorizontally="true"
+                        android:selectAllOnFocus="true"
+                        android:inputType="textVisiblePassword"
+                        android:textColor="@color/red"
+                        android:textColorHint="@color/red"
+                        android:textSize="@dimen/edit_email_size" />
+
+                    <ImageView
+                        android:id="@+id/nicknameInd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="@dimen/nicknameInd_marginTop"
+                        android:layout_toRightOf="@+id/nicknameEt"
+                        android:background="@drawable/unusable"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </TableRow>
+            <!-- 表格的第二行，密码和密码输入框，黑色粗体字，重心靠右，扩充5个像素 -->
+
+            <TableRow>
+
+                <!-- "密码"输入框；文本超出TextView的宽度的情况下，出现横拉条 -->
+
+                <RelativeLayout
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/emailEt"
+                        android:layout_width="@dimen/emailEt_width"
+                        android:layout_height="@dimen/emailEt_height"
+                        android:layout_marginLeft="@dimen/emailEt_marginLeft"
+                        android:layout_marginTop="@dimen/emailEt_marginTop"
+                        android:background="@drawable/a_0000_inputbox"
+                        android:ems="10"
+                        android:hint="邮箱"
+                        android:paddingLeft="10dp"
+                        android:scrollHorizontally="true"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/red"
+                        android:textColorHint="@color/red"
+                        android:textSize="@dimen/edit_password_size" >
+                        <requestFocus />
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/emailInd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="@dimen/emailInd_marginTop"
+                        android:layout_toRightOf="@+id/emailEt"
+                        android:background="@drawable/unusable"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/processInd"
+                        style="@android:style/Widget.ProgressBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="@dimen/emailInd_marginTop"
+                        android:layout_toRightOf="@+id/emailEt"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <RelativeLayout
+                    android:id="@+id/regSet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/stateTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/stateTv_height"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/stateTv_marginTop"
+                        android:text="123ttttttttttt"
+                        android:textSize="@dimen/stateTv_textSize"
+                        android:visibility="visible" />
+
+                    <RelativeLayout
+                        android:id="@+id/privacy"
+                        android:layout_width="@dimen/privacy_width"
+                        android:layout_height="@dimen/privacy_height"
+                        android:layout_below="@+id/stateTv"
+                        android:layout_marginLeft="@dimen/privacy_marginLeft"
+                        android:layout_marginTop="@dimen/privacy_marginTop" >
+
+                        <CheckBox
+                            android:id="@+id/privacySelect"
+                            style="@style/CustomCheckboxTheme"
+                            android:layout_width="@dimen/privacySelect_width"
+                            android:layout_height="@dimen/privacySelect_height" />
+
+                        <Button
+                            android:id="@+id/privacyButton"
+                            android:layout_width="@dimen/privacyButton_width"
+                            android:layout_height="@dimen/privacyButton_height"
+                            android:layout_toRightOf="@+id/privacySelect"
+                            android:background="@drawable/text" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btn_regnext_step"
+                        android:layout_width="@dimen/btn_regnext_step_width"
+                        android:layout_height="@dimen/btn_regnext_step_height"
+                        android:layout_below="@+id/privacy"
+                        android:layout_marginLeft="@dimen/btn_regnext_step_marginLeft"
+                        android:layout_marginTop="@dimen/btn_regnext_step_marginTop"
+                        android:background="@drawable/next_step" />
+
+                    <RelativeLayout 
+                        android:id="@+id/tologinLay"
+                        android:layout_width="145dp"
+                        android:layout_height="55dp"
+                        android:layout_alignRight="@+id/btn_regnext_step"
+                        android:layout_below="@+id/btn_regnext_step"
+                        android:layout_marginTop="@dimen/tologinButton_marginTop">
+                    	
+	                    <Button
+	                    	android:layout_width="@dimen/tologinButton_width"
+	                        android:layout_height="@dimen/tologinButton_height"
+	                        android:layout_alignParentTop="true"
+	                        android:layout_alignParentRight="true"
+	                        android:background="@drawable/tologinbutton"/>
+	                    
+	                    <Button 
+	                        android:id="@+id/tologinButton"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="match_parent"
+	                        android:background="@color/transparent"/>
+	                </RelativeLayout>       
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <!-- step2 -->
+
+    <LinearLayout
+        android:id="@+id/step2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <!-- 表格布局，包括账号和密码 -->
+
+        <TableLayout
+            android:id="@+id/regInfo2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1" >
+
+            <!-- 表格的第一行，账号文本和输入框，黑色粗体字，重心靠右，四周扩充5个像素 -->
+
+            <TableRow>
+
+                <!-- "账号"输入框，文本超出TextView的宽度的情况下，出现横拉条 -->
+
+                <EditText
+                    android:id="@+id/passEt"
+                    android:layout_width="@dimen/passEt_width"
+                    android:layout_height="@dimen/passEt_height"
+                    android:layout_marginLeft="@dimen/passEt_marginLeft"
+                    android:layout_marginTop="@dimen/passEt_marginTop"
+                    android:background="@drawable/a_0000_inputbox"
+                    android:hint="密码"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:scrollHorizontally="true"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/red"
+                    android:textColorHint="@color/red"
+                    android:textSize="@dimen/edit_passEt_size" />
+            </TableRow>
+            <!-- 表格的第二行，密码和密码输入框，黑色粗体字，重心靠右，扩充5个像素 -->
+
+            <TableRow>
+
+                <!-- "密码"输入框；文本超出TextView的宽度的情况下，出现横拉条 -->
+
+                <EditText
+                    android:id="@+id/passagainEt"
+                    android:layout_width="@dimen/passagainEt_width"
+                    android:layout_height="@dimen/passagainEt_height"
+                    android:layout_marginLeft="@dimen/passagainEt_marginLeft"
+                    android:layout_marginTop="@dimen/passagainEt_marginTop"
+                    android:background="@drawable/a_0000_inputbox"
+                    android:hint="确认密码"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:scrollHorizontally="true"
+                    android:textColor="@color/red"
+                    android:textColorHint="@color/red"
+                    android:textSize="@dimen/passagainEt_size" >
+
+                    <requestFocus />
+                </EditText>
+            </TableRow>
+
+            <TableRow>
+
+                <RelativeLayout
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/image_marginTop" >
+
+                    <ImageButton
+                        android:id="@+id/image_girl"
+                        android:layout_width="@dimen/image_girl_width"
+                        android:layout_height="@dimen/image_girl_height"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/image_girl_marginLeft"
+                        android:background="#00000000"
+                        android:src="@drawable/girl_normal" >
+                    </ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/image_boy"
+                        android:layout_width="@dimen/image_boy_width"
+                        android:layout_height="@dimen/image_boy_height"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/image_boy_marginLeft"
+                        android:layout_toRightOf="@+id/image_girl"
+                        android:background="#00000000"
+                        android:src="@drawable/boy_normal" />
+
+                    <ImageView
+                        android:id="@+id/image_index"
+                        android:layout_width="@dimen/image_index_width"
+                        android:layout_height="@dimen/image_index_height"
+                        android:layout_marginLeft="@dimen/image_index_marginLeft"
+                        android:src="@drawable/photo" />
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <RelativeLayout
+                    android:id="@+id/regSet2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/stateTv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/stateTv_height"
+                        android:layout_centerHorizontal="true"
+                        android:text="112222222222222"
+                        android:textSize="@dimen/stateTv_textSize"
+                        android:visibility="visible" />
+
+                    <ImageButton
+                        android:id="@+id/btn_regnext"
+                        android:layout_width="@dimen/btn_regnext_width"
+                        android:layout_height="@dimen/btn_regnext_height"
+                        android:layout_below="@+id/stateTv2"
+                        android:layout_marginLeft="@dimen/btn_regnext_marginLeft"
+                        android:layout_marginTop="@dimen/btn_regnext_marginTop"
+                        android:background="@drawable/next_step" />
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</com.minus.lovershouse.util.ResizeLayout>

@@ -1,0 +1,421 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.minus.lovershouse"
+     android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+    
+    
+   
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在sd卡中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.READ_LOGS" />
+	
+    <!-- push 权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.READ_LOGS" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+    <application
+        android:hardwareAccelerated="true"
+        android:name=".singleton.GlobalApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="3b7f8d7bc36627a4bf17b859d811f661" />
+        <!-- com.minus.lovershouse.bitmap.ui.ImageGridActivity -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/title_activity_welcome"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/Anim_style2"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+         <activity
+            android:name=".CoupleActionActivity" 
+            android:theme="@style/ActionDialogStyle" 
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        
+         <activity
+            android:name="com.minius.leadpage.OperateGuide" android:theme="@style/MyDialogStyle" android:launchMode="singleTop" android:screenOrientation="portrait" />
+         <activity
+            android:name="com.minius.leadpage.ConfigOperateGuide" android:theme="@style/MyDialogStyle" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".ChatActivity"
+            android:launchMode="singleTop"
+             android:windowSoftInputMode="stateVisible|adjustResize"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.minus.lovershouse.setting.ConfigActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateVisible|stateVisible|adjustPan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.minus.lovershouse.setting.BasicSettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.minus.lovershouse.setting.PasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.minus.lovershouse.setting.AboutusActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.minus.lovershouse.setting.HelpActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.minus.lovershouse.setting.PrivacyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.minus.lovershouse.setting.RankActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.minus.lovershouse.setting.CreateGesturePasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.minus.lovershouse.setting.UnlockGesturePasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SetAppearanceActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.minus.weather.WeatherActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.minus.diary.DiaryActivity"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.minus.diary.EditDiaryActivity"
+             android:theme="@android:style/Theme.NoTitleBar" 
+             android:launchMode="singleTop"
+             android:screenOrientation="portrait" >
+        </activity>
+       
+       
+        <activity
+            android:name="com.minus.calendar.CalendarMainActivity"
+            android:theme="@style/Anim_style2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.minus.calendar.CalendarAddActivity"
+            android:theme="@style/Anim_style2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.minus.calendar.CalendarDetail"
+            android:theme="@style/Anim_style2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.minus.map.MapActivity"
+            android:theme="@style/Anim_style2"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity 
+            android:name="com.minus.lovershouse.bitmap.ui.ImageDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity 
+            android:name=".ChatPicDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.minus.gallery.GalleryActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.minus.gallery.GalleryImagePagerActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity 
+            android:name="com.minus.cropimage.CropActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.minius.chat.imagedetail.ImagePagerActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" />
+
+        <activity 
+            android:name="com.umeng.fb.ConversationActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity 
+            android:name="com.umeng.fb.ContactActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" />
+        
+         <activity 
+             android:name="com.minius.leadpage.GuideActivity"
+             android:theme="@android:style/Theme.NoTitleBar"
+             android:screenOrientation="portrait" />
+         
+         <activity 
+             android:name="com.minius.leadpage.TranAnimation"
+             android:theme="@android:style/Theme.NoTitleBar"
+             android:screenOrientation="portrait" />
+         
+           <activity 
+               android:name="com.minius.error.ActErrorReport"
+               android:screenOrientation="portrait" />
+         
+      
+        <service android:name="com.minius.service.MiniusService">  
+            <intent-filter >  
+                <action android:name="ServiceDiaryNewMsg"/>  
+                 <action android:name="ServiceChatNewMsg"/>
+                 <action android:name="ServiceAlbumNewMsg"/>
+                 <action android:name="ServiceMainDidLoginSucc"/>
+                  <action android:name="ServiceActionNewMsg"/>
+                 
+            </intent-filter>  
+        </service>  
+        
+        <service android:name="com.minius.service.LockService">  
+        
+        </service>  
+        
+        <receiver android:name="com.minius.receiver.SDBroadCastReceiver">
+
+　　 <intent-filter android:priority="1000">
+
+　　<action android:name="android.intent.action.MEDIA_MOUNTED"/>
+
+　　<action android:name="android.intent.action.MEDIA_EJECT" />
+
+  <action android:name="android.net.conn.CONNECTIVITY_CHANGE"  />
+  <action android:name="android.net.wifi.WIFI_STATE_CHANGED"  />
+   <action android:name="com.loverhouse.minius.Disconnected"  />
+   <action android:name= "com.loverhouse.minius.Onconnected"  />
+    <action android:name= "com.loverhouse.minius.nonetwork"  />
+
+　　<data android:scheme="file"/>
+
+　　</intent-filter>
+
+　　</receiver>
+
+   <receiver android:name="com.minius.receiver.ConnectBroadCastReceiver">
+
+　　 <intent-filter android:priority="1000">
+  <action android:name="android.net.conn.CONNECTIVITY_CHANGE"  />
+  <action android:name="android.net.wifi.WIFI_STATE_CHANGED"  />
+   <action android:name="com.loverhouse.minius.Disconnected"  />
+   <action android:name= "com.loverhouse.minius.Onconnected"  />
+    <action android:name= "com.loverhouse.minius.nonetwork"  />
+/>
+
+　　</intent-filter>
+
+　　</receiver>
+
+        
+        
+        <!-- push应用定义消息receiver声明 -->
+        <receiver android:name="com.minius.baidupush.BaiduPushReceiver" >
+            <intent-filter>
+
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+
+       <!-- push service start --> 
+<!--  用于接收系统消息以保证PushService正常运行  --> 
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+        <!-- push结束 -->
+
+<!-- 友盟的自动更新-->
+<service
+    android:name="com.umeng.update.net.DownloadingService"
+    android:process=":DownloadingService" >
+</service>
+<activity 
+    android:name="com.umeng.update.UpdateDialogActivity"
+    android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+</activity>
+<!-- 友盟的receiver和 -->
+		<receiver
+		    android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+		    android:exported="false" >
+		</receiver>
+		
+		<receiver android:name="com.umeng.message.RegistrationReceiver" >
+		    <intent-filter>
+		        <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="android.intent.action.PACKAGE_REMOVED" />
+		
+		        <data android:scheme="package" />
+		    </intent-filter>
+		</receiver>
+		
+		<receiver android:name="com.umeng.message.UmengBroadcastReceiver" >
+		    <intent-filter>
+		        <action android:name="org.agoo.android.intent.action.RECEIVE" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="com.minus.lovershouse.intent.action.COMMAND" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="org.agoo.android.intent.action.RE_ELECTION_V2" />
+		    </intent-filter>
+		</receiver>
+		
+		<service
+		    android:name="com.umeng.message.UmengService"
+		    android:exported="true"
+		    android:process=":umengService_v1" >
+		    <intent-filter>
+		        <action android:name="com.minus.lovershouse.intent.action.START" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="com.minus.lovershouse.intent.action.COCKROACH" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="org.agoo.android.intent.action.PING" />
+		    </intent-filter>
+		</service>
+		
+		<service
+		    android:name="org.android.agoo.service.ElectionService"
+		    android:exported="true"
+		    android:process=":umengService_v1" >
+		    <intent-filter>
+		        <action android:name="org.agoo.android.intent.action.ELECTION_V2" />
+		    </intent-filter>
+		</service>
+		<service android:name="com.umeng.message.UmengIntentService" />
+		<!-- V1.3.0添加的service，负责下载通知的资源 -->
+		<service android:name="com.umeng.message.UmengDownloadResourceService" />
+
+		
+        <!-- API Key -->
+        <meta-data
+            android:name="api_key"
+            android:value="T1tbNK2H4K8u8Hqn3PCujtxk" />
+        <!-- 友盟  -->
+        <meta-data 
+            android:value="5375f2c856240b3f71042874" 
+            android:name="UMENG_APPKEY">
+            
+        </meta-data>
+        <!-- 根据不同的渠道更改下述value -->
+		<meta-data android:value="Umeng" 
+		    android:name="UMENG_CHANNEL"/>
+		
+		<meta-data
+		    android:name="UMENG_MESSAGE_SECRET"
+		    android:value="c586cd24d8d049a2b4af27921fce53ba" >
+		</meta-data>
+    </application>
+
+</manifest>

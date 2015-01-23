@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+         android:layout_marginTop="@dimen/couple_kiss_margin_top"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:scaleX="@dimen/couple_kiss_scale"
+        android:scaleY="@dimen/couple_kiss_scale" >
+
+        <ImageView
+            android:id="@+id/kiss_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/Butterfly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:src="@anim/couple_butterfly" />
+    </FrameLayout>
+
+</RelativeLayout>

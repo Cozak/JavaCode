@@ -1,0 +1,60 @@
+package com.dell.prototype.apm.instrumentation;
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: lliu2
+ * Date: 9/2/14
+ * Time: 9:53 AM
+ * To change this template use File | Settings | File Templates.
+ */
+public class Trace {
+
+    private final long tid;
+    private final long timestamp;
+    private final TraceMethodInfo traceMethodInfo;
+
+
+    public long getTimestamp() {
+        return timestamp;
+    }
+
+    public TraceMethodInfo getTraceMethodInfo() {
+        return traceMethodInfo;
+    }
+
+
+
+    public boolean isJdbcTrace() {
+        return traceMethodInfo instanceof JdbcTraceMethodInfo;
+    }
+
+    public static Trace create(long tid, TraceMethodInfo traceMethodInfo, long timestamp) {
+        return new Trace(tid, traceMethodInfo, timestamp);
+    }
+
+    public String getSql() {
+        if (this.isJdbcTrace()) {
+            return ((JdbcTraceMethodInfo) traceMethodInfo).getSql();
+        } else {
+            return null;
+        }
+    }
+
+    private Trace(long tid, TraceMethodInfo desc, long timestamp) {
+        this.tid = tid;
+        this.traceMethodInfo = desc;
+        this.timestamp = timestamp;
+    }
+
+
+    @Override
+    public String toString() {
+        return new StringBuilder()
+                .append(" ( ")
+                .append(" tid: ").append(tid)
+                .append(" time: ").append(timestamp)
+                .append(" traceMethodInfo: ").append(traceMethodInfo.toString())
+                .append(" ) ")
+                .toString();
+    }
+}

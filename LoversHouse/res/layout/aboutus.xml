@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/about_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/about_navigation" 
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/about_back"
+            android:scaleType="fitCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/weather_back_marginLeft"
+            android:clickable="true"
+            android:src="@drawable/back_button_selector" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/about_body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/about_top" >
+
+        <ImageView
+            android:id="@+id/about_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/about_background" />
+
+        <ImageView
+            android:id="@+id/about_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/about_button" />
+    </FrameLayout>
+
+</RelativeLayout>

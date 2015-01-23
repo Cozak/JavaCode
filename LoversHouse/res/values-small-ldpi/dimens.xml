@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="activity_config_bgalpha" format="float" type="dimen">0.3</item>
+    <!-- 主界面使用参数 -->
+    <dimen name="panel_headAndPanel">10.0dip</dimen>
+    <dimen name="set_imgWidth">50.0dip</dimen>
+    <dimen name="set_imgHeight">50.0dip</dimen>
+    <dimen name="myaccountTitleSize">20.0dip</dimen>
+    <dimen name="panel_topJSXtempLLWidth">155.0dip</dimen>
+    <dimen name="setappearancedeco">5dp</dimen>
+    <dimen name="setappearancebody">45dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="weatherwidth">100.0dip</dimen>
+    <dimen name="weatherheight">100.0dip</dimen>
+    <dimen name="weatherleft">20.0dip</dimen>
+    <dimen name="weathertop">40dip</dimen>
+    <dimen name="person_portraitcloth">60dp</dimen>
+
+    <!-- register页面使用参数 -->
+    <!-- 第一步 -->
+    <!-- 顶部图片 -->
+    <dimen name="reg_top_height">50dp</dimen>
+    <!-- 返回按钮 -->
+    <dimen name="reg_back_width">45dp</dimen>
+    <dimen name="reg_back_height">45dp</dimen>
+    <dimen name="reg_back_marginLeft">10dp</dimen>
+    <!-- 输入用户名框 -->
+    <dimen name="nicknameEt_width">240dp</dimen>
+    <dimen name="nicknameEt_height">45dp</dimen>
+    <dimen name="nicknameEt_marginLeft">40dp</dimen>
+    <dimen name="nicknameEt_marginTop">20dp</dimen>
+    <dimen name="edit_email_size">18dp</dimen>
+    <dimen name="nicknameInd_marginTop">35dp</dimen>
+    <!-- 输入邮箱框 -->
+    <dimen name="emailEt_width">240dp</dimen>
+    <dimen name="emailEt_height">45dp</dimen>
+    <dimen name="emailEt_marginLeft">40dp</dimen>
+    <dimen name="emailEt_marginTop">0dp</dimen>
+    <dimen name="edit_password_size">18dp</dimen>
+    <dimen name="emailInd_marginTop">30dp</dimen>
+    <dimen name="stateTv_marginTop">3dp</dimen>
+    <dimen name="stateTv_height">15dp</dimen>
+    <dimen name="stateTv_textSize">15dp</dimen>
+    <!-- privacy输入框 -->
+    <dimen name="privacy_width">240dp</dimen>
+    <dimen name="privacy_height">16dp</dimen>
+    <dimen name="privacy_marginLeft">45dp</dimen>
+    <dimen name="privacy_marginTop">10dp</dimen>
+    <!-- privacy下面的checkbox和字 -->
+    <dimen name="privacySelect_width">20dp</dimen>
+    <dimen name="privacySelect_height">16dp</dimen>
+    <dimen name="privacyButton_width">260dp</dimen>
+    <dimen name="privacyButton_height">50dp</dimen>
+    <!-- 下一步按钮 -->
+    <dimen name="btn_regnext_step_width">240dp</dimen>
+    <dimen name="btn_regnext_step_height">45dp</dimen>
+    <dimen name="btn_regnext_step_marginLeft">40dp</dimen>
+    <dimen name="btn_regnext_step_marginTop">10dp</dimen>
+    <!-- 忘记密码按钮 -->
+    <dimen name="tologinButton_width">120dp</dimen>
+    <dimen name="tologinButton_height">20dp</dimen>
+    <dimen name="tologinButton_marginTop">5dp</dimen>
+    <!-- 第二步 -->
+    <!-- 密码按钮 -->
+    <dimen name="passEt_width">210dp</dimen>
+    <dimen name="passEt_height">45dp</dimen>
+    <dimen name="passEt_marginLeft">40dp</dimen>
+    <dimen name="passEt_marginTop">20dp</dimen>
+    <dimen name="edit_passEt_size">20dp</dimen>
+    <!-- 再次输入密码 -->
+    <dimen name="passagainEt_width">220dp</dimen>
+    <dimen name="passagainEt_height">45dp</dimen>
+    <dimen name="passagainEt_marginLeft">40dp</dimen>
+    <dimen name="passagainEt_marginRight">0dp</dimen>
+    <dimen name="passagainEt_marginTop">1dp</dimen>
+    <dimen name="passagainEt_size">20dp</dimen>
+    <!-- 女生图标 -->
+    <dimen name="image_marginTop">2dp</dimen>
+    <dimen name="image_girl_width">80dp</dimen>
+    <dimen name="image_girl_height">50dp</dimen>
+    <dimen name="image_girl_marginLeft">45dp</dimen>
+    <!-- 男生图标 -->
+    <dimen name="image_boy_width">70dp</dimen>
+    <dimen name="image_boy_height">70dp</dimen>
+    <dimen name="image_boy_marginLeft">10dp</dimen>
+    <!-- 右侧图案参数 -->
+    <dimen name="image_index_width">60dp</dimen>
+    <dimen name="image_index_height">60dp</dimen>
+    <dimen name="image_index_marginLeft">215dp</dimen>
+    <!-- 下一步参数 -->
+    <dimen name="btn_regnext_width">220dp</dimen>
+    <dimen name="btn_regnext_height">45dp</dimen>
+    <dimen name="btn_regnext_marginTop">5dp</dimen>
+    <dimen name="btn_regnext_marginLeft">45dp</dimen>
+
+    <!-- login页面参数 -->
+    <dimen name="login_back_width">40dp</dimen>
+    <dimen name="login_back_height">40dp</dimen>
+    <dimen name="login_navigation_height">50dp</dimen>
+    <!-- 邮箱参数设置 -->
+    <dimen name="userEditText_width">240dp</dimen>
+    <dimen name="userEditText_height">40dp</dimen>
+    <dimen name="userEditText_marginLeft">35dp</dimen>
+    <dimen name="userEditText_marginRight">0dp</dimen>
+    <dimen name="userEditText_marginTop">15dp</dimen>
+    <dimen name="userEditText_size">15dp</dimen>
+    <!-- 密码参数设置 -->
+    <dimen name="pwdEditText_width">240dp</dimen>
+    <dimen name="pwdEditText_height">40dp</dimen>
+    <dimen name="pwdEditText_marginLeft">35dp</dimen>
+    <dimen name="pwdEditText_marginRight">0dp</dimen>
+    <dimen name="pwdEditText_marginTop">3dp</dimen>
+    <dimen name="pwdEditText_size">15dp</dimen>
+    <!-- 登录状态设置 -->
+    <dimen name="loginstateTv_marginTop">-5dp</dimen>
+    <dimen name="loginstateTv_width">200dp</dimen>
+    <dimen name="loginstateTv_height">20dp</dimen>
+    <dimen name="loginstateTv_textSize">15dp</dimen>
+    <dimen name="loginstateTv_marginLeft">60dp</dimen>
+    <!-- 登录按钮设置 -->
+    <dimen name="loginSet_marginTop">10dp</dimen>
+    <dimen name="login_width">240dp</dimen>
+    <dimen name="login_height">40dp</dimen>
+    <dimen name="login_marginLeft">35dp</dimen>
+    <dimen name="login_marginTop">5dp</dimen>
+    <!-- 忘记密码按钮设置 -->
+    <dimen name="forgetPassButton_width">60dp</dimen>
+    <dimen name="forgetPassButton_height">12dp</dimen>
+    <dimen name="forgetPassButton_marginRight">10dp</dimen>
+    <dimen name="forgetPassButton_marginTop">10dp</dimen>
+    <dimen name="forgetPassButton_textSize">5dp</dimen>
+
+    <!-- activity_main页面 -->
+    <!-- configBtn使用参数 -->
+    <dimen name="configBtn_width">40dp</dimen>
+    <dimen name="configBtn_height">40dp</dimen>
+    <dimen name="configBtn_marginLeft">5dp</dimen>
+    <dimen name="configBtn_marginTop">5dp</dimen>
+    <!-- guidetomatchBtn使用参数 -->
+    <dimen name="guidetomatchBtn_width">45dp</dimen>
+    <dimen name="guidetomatchBtn_height">45dp</dimen>
+    <!-- chatBtn使用参数 -->
+    <dimen name="chatBtn_width">40dp</dimen>
+    <dimen name="chatBtn_height">40dp</dimen>
+    <dimen name="chatBtn_marginRight">5dp</dimen>
+    <dimen name="chatBtn_marginTop">5dp</dimen>
+    <!-- weatherBtn使用参数 -->
+    <dimen name="weatherBtn_width">125dp</dimen>
+    <dimen name="weatherBtn_height">145dp</dimen>
+    <dimen name="weather_marginLeft">20dp</dimen>
+    <dimen name="weather_marginTop">40dp</dimen>
+    <!-- dailyBtn使用参数 -->
+    <dimen name="dailyBtn_width">75dp</dimen>
+    <dimen name="dailyBtn_height">35dp</dimen>
+    <dimen name="dailyBtn_marginLeft">35dp</dimen>
+    <dimen name="daily_marginTop">183dp</dimen>
+    <!-- annBtn使用参数 -->
+    <dimen name="annBtn_width">45dp</dimen>
+    <dimen name="annBtn_height">70dp</dimen>
+    <dimen name="ann_marginTop">45dp</dimen>
+    <dimen name="ann_marginLeft">170dp</dimen>
+    <!-- lampBtn使用参数 -->
+    <dimen name="lampBtn_width">45dp</dimen>
+    <dimen name="lampBtn_height">75dp</dimen>
+    <dimen name="lamp_marginTop">110dp</dimen>
+    <dimen name="lamp_marginLeft">140dp</dimen>
+    <!-- pictureBtn使用参数 -->
+    <dimen name="pictureBtn_width">120dp</dimen>
+    <dimen name="pictureBtn_height">80dp</dimen>
+    <dimen name="picture_marginRight">-5dp</dimen>
+    <dimen name="picture_marginTop">78dp</dimen>
+    <!-- mapBtn使用参数 -->
+    <dimen name="mapBtn_width">70dp</dimen>
+    <dimen name="mapBtn_height">70dp</dimen>
+    <dimen name="map_marginTop">150dp</dimen>
+    <dimen name="map_marginLeft">232dp</dimen>
+
+    <!-- stand_boy_view使用参数 -->
+    <item name="stand_boy_scale" format="float" type="dimen">0.6</item>
+    <dimen name="stand_boy_marginBottom">-25dp</dimen>
+    
+    <!-- stand_girl_view使用参数 -->
+    <item name="stand_girl_scale" format="float" type="dimen">0.6</item>
+    <dimen name="stand_girl_marginBottom">-25dp</dimen>
+    
+    <!-- GirlView使用参数 -->
+    <item name="girl_portrait_scale" format="float" type="dimen">0.6</item>
+    <dimen name="girl_portrait_marginBottom">-5dp</dimen>
+    
+    <!-- MyView使用参数 -->  
+    <item name="person_portrait_scale" format="float" type="dimen">0.6</item>
+    <dimen name="person_portrait_marginBottom">-5dp</dimen>
+    
+    <!-- sit_girl_view使用参数 -->
+    <item name="girl_sit_scale" format="float" type="dimen">0.6</item>
+    <dimen name="girl_sit_marginBottom">-20dp</dimen>
+    
+    <!-- sit_boy_view使用参数 -->
+    <item name="boy_sit_scale" format="float" type="dimen">0.6</item>
+    <dimen name="boy_sit_marginBottom">-20dp</dimen>
+
+    <!-- setappearance界面使用参数 -->
+    <!-- 注册账号使用参数 -->
+    <dimen name="create_an_account_head_height">55dp</dimen>
+    <!-- 返回按钮使用参数 -->
+    <dimen name="setappback_width">40dp</dimen>
+    <dimen name="setappback_height">40dp</dimen>
+    <dimen name="setappback_marginLeft">10dp</dimen>
+    <dimen name="setappback_marginTop">5dp</dimen>
+    <!-- 完成按钮使用参数 -->
+    <dimen name="setfinish_width">40dp</dimen>
+    <dimen name="setfinish_height">40dp</dimen>
+    <dimen name="setappback_marginRight">10dp</dimen>
+    <!-- setappearancehead_layout使用参数 -->
+    <!--
+    <array name="setappearance_person_portrait">0.5</array>
+    <array name="setappearance_girl_portrait">0.5</array>
+    -->
+    <item name="setappearance_person_portrait" format="float" type="dimen">0.5</item>
+    <item name="setappearance_girl_portrait" format="float" type="dimen">0.5</item>
+
+    <dimen name="setappearance_person_portrait_marginTop">0dp</dimen>
+    <dimen name="setappearance_girl_portrait_marginTop">0dp</dimen>
+    <!-- ListView使用参数 -->
+    <dimen name="decorate_marginTop">170dp</dimen>
+<!--     天气页面参数 -->
+    <dimen name="weather_back_width">40dp</dimen>
+    <dimen name="weather_back_height">40dp</dimen>
+    <dimen name="weather_back_marginLeft">8dp</dimen>
+    <dimen name="weather_back_marginTop">8dp</dimen>
+</resources>

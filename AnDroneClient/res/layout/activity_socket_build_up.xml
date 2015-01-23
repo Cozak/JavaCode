@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/socket_edit_ip"
+        android:layout_centerHorizontal="true"
+        android:text="@string/socket_title" />
+
+    <Button
+        android:id="@+id/socket_but_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="165dp"
+        android:text="@string/socket_but"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/socket_edit_ip"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/socket_but_submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:ems="10"
+        android:text="172.18.32.64:4783">
+            	<!-- android:text="172.18.187.115:8081" -->
+        <!-- android:text="IP:Port" > -->
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/socket_but_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/socket_but_submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="@string/socket_cancel" />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chat"
+    android:background="#ffffff"
+    >
+   
+   
+  <RelativeLayout
+     android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:orientation="vertical" >
+
+<!--   <RelativeLayout  -->
+
+<!--             android:id="@+id/rl_layout" -->
+<!--   			android:layout_width="fill_parent" -->
+<!--   			android:layout_height="@dimen/reg_top_height" -->
+<!--   			android:background="@drawable/_0001_navigationbars" -->
+<!--   			android:gravity="center_vertical" > -->
+<!--   			<ImageButton -->
+<!--   			    android:id="@+id/btn_back" -->
+<!--   			    android:layout_width="@dimen/weather_back_width" -->
+<!--   			    android:layout_height="@dimen/weather_back_height" -->
+<!--   			    android:layout_marginLeft="@dimen/weather_back_marginLeft" -->
+<!--   			    android:background="@drawable/back_button_selector"  -->
+<!--    			    android:layout_centerVertical="true"/> -->
+<!-- 		</RelativeLayout> -->
+	    <FrameLayout
+        android:id="@+id/chat_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/_0001_navigationbars" 
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:scaleType="fitCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/weather_back_marginLeft"
+            android:clickable="true"
+            android:src="@drawable/back_button_selector" />
+    </FrameLayout>
+	  
+   <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+           <!-- 聊天输入框 -->
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            layout="@layout/custom_facerelativelayout" />
+         <include
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            layout="@layout/voice_input_panel" />
+    </RelativeLayout>
+    
+    <RelativeLayout  
+        android:id="@+id/chatlistRl"
+        android:layout_below="@id/chat_top"
+        android:layout_above="@id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+   
+    
+    </RelativeLayout>
+    
+  
+  </RelativeLayout>
+</FrameLayout>

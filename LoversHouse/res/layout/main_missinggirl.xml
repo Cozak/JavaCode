@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/missing_girl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+      
+        <ImageView
+            android:id="@+id/missing_girl_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         />
+
+
+        <ImageView
+            android:id="@+id/missing_girl_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/missgirl_eye" />
+
+    
+       <ImageView
+            android:id="@+id/missing_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/miss_heart" />
+        
+    </FrameLayout>
+

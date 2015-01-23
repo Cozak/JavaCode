@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@null" >
+
+    <FrameLayout
+        android:id="@+id/girl_eat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/EatGirl_chair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_chair" />
+
+        <ImageView
+            android:id="@+id/EatGirl_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_body" />
+
+        <ImageView
+            android:id="@+id/EatGirl_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_face" />
+
+        <ImageView
+            android:id="@+id/EatGirl_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/eatgirl_eye" />
+
+        <ImageView
+            android:id="@+id/EatGirl_cloth01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_clothes1" />
+
+        <!--
+        <ImageView
+            android:id="@+id/EatGirl_cloth02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_clothes02" />
+
+        <ImageView
+            android:id="@+id/EatGirl_cloth03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_clothes03" />
+
+        <ImageView
+            android:id="@+id/EatGirl_cloth04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_clothes04" />
+
+        <ImageView
+            android:id="@+id/EatGirl_cloth05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_clothes05" />
+
+        <ImageView
+            android:id="@+id/EatGirl_cloth06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_clothes06" />
+
+        <ImageView
+            android:id="@+id/EatGirl_cloth07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_clothes07" />
+
+        <ImageView
+            android:id="@+id/EatGirl_cloth08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_clothes08" />
+
+        <ImageView
+            android:id="@+id/EatGirl_cloth09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_clothes09" />
+
+        <ImageView
+            android:id="@+id/EatGirl_cloth10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_clothes10" />
+
+        <ImageView
+            android:id="@+id/EatGirl_cloth11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_clothes11" />
+
+        <ImageView
+            android:id="@+id/EatGirl_cloth12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_clothes12" />
+
+        <ImageView
+            android:id="@+id/EatGirl_cloth13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_clothes13" />
+        -->
+
+        <ImageView
+            android:id="@+id/EatGirl_hair01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_hair01" />
+
+        <!--
+             <ImageView
+            android:id="@+id/EatGirl_hair02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_hair02" />
+
+        <ImageView
+            android:id="@+id/EatGirl_hair03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_hair03" />
+
+        <ImageView
+            android:id="@+id/EatGirl_hair04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_hair04" />
+
+        <ImageView
+            android:id="@+id/EatGirl_hair05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_hair05" />
+
+        <ImageView
+            android:id="@+id/EatGirl_hair06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_hair06" />
+        -->
+
+        <ImageView
+            android:id="@+id/EatGirl_deco01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_decoraion1" />
+
+        <!--
+             <ImageView
+            android:id="@+id/EatGirl_deco02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_decoraion02" />
+
+        <ImageView
+            android:id="@+id/EatGirl_deco03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_decoraion03" />
+
+        <ImageView
+            android:id="@+id/EatGirl_deco04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_decoraion04" />
+
+        <ImageView
+            android:id="@+id/EatGirl_deco05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_decoraion05" />
+
+        <ImageView
+            android:id="@+id/EatGirl_deco06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_decoraion06" />
+
+        <ImageView
+            android:id="@+id/EatGirl_deco07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_decoraion07" />
+
+        <ImageView
+            android:id="@+id/EatGirl_deco08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_decoraion08" />
+
+        <ImageView
+            android:id="@+id/EatGirl_deco09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_decoraion09" />
+
+        <ImageView
+            android:id="@+id/EatGirl_deco10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_decoraion10" />
+
+        <ImageView
+            android:id="@+id/EatGirl_deco11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_decoraion11" />
+
+        <ImageView
+            android:id="@+id/EatGirl_deco12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_decoraion12" />
+        -->
+
+        <ImageView
+            android:id="@+id/EatGirl_mouth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/eatgirl_mouth" />
+
+        <ImageView
+            android:id="@+id/EatGirl_leftHand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/eatgirl_hand" />
+
+        <ImageView
+            android:id="@+id/Girl_eat_right_hand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_eat_righthand" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/girl_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/ReadGirl_chair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_chair" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_face" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_body" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_sitCloth01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_clothes1" />
+
+        <!--
+             <ImageView
+            android:id="@+id/ReadGirl_sitCloth02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_clothes02" 
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ReadGirl_sitCloth03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_clothes03" 
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ReadGirl_sitCloth04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_clothes04" 
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ReadGirl_sitCloth05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_clothes05" 
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ReadGirl_sitCloth06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_clothes06" 
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ReadGirl_sitCloth07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_clothes07" 
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ReadGirl_sitCloth08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_clothes08" 
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ReadGirl_sitCloth09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_clothes09" 
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ReadGirl_sitCloth10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_clothes10" 
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ReadGirl_sitCloth11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_clothes11" 
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ReadGirl_sitCloth12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_clothes12" 
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ReadGirl_sitCloth13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_clothes13" 
+            android:visibility="gone"
+            />
+        -->
+
+        <ImageView
+            android:id="@+id/ReadGirl_hair01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_hair01"
+            android:visibility="visible" />
+
+        <!--
+             <ImageView
+            android:id="@+id/ReadGirl_hair02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_hair02"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_hair03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_hair03"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_hair04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_hair04"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_hair05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_hair05"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_hair06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_hair06" 
+            android:visibility="gone"
+            />
+        -->
+
+        <ImageView
+            android:id="@+id/ReadGirl_deco01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_decoration1" />
+
+        <!--
+             <ImageView
+            android:id="@+id/ReadGirl_deco02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_decoration02"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_deco03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_decoration03"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_deco04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_decoration04"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_deco05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_decoration05"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_deco06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_decoration06"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_deco07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_decoration07"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_deco08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_decoration08"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_deco09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_decoration09"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_deco10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_decoration10" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_deco11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_decoration11" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_deco12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_learn_decoration12" />
+        -->
+
+        <ImageView
+            android:id="@+id/ReadGirl_hand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/readgirl_hand" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/readgirl_eye" />
+    </FrameLayout>
+
+</RelativeLayout>

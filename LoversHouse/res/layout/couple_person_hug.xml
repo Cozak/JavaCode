@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/couple_hug_margin_top"
+        android:scaleX="@dimen/couple_hug_scale"
+        android:scaleY="@dimen/couple_hug_scale" >
+
+        <ImageView
+            android:id="@+id/hug_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/girl_hug_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:scaleType="fitCenter"
+            android:src="@anim/girl_hug_eye"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/boy_hug_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:scaleType="fitCenter"
+            android:src="@anim/hug_boy_eye"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/girl_hug_hair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:scaleType="fitCenter" />
+    </FrameLayout>
+
+</RelativeLayout>

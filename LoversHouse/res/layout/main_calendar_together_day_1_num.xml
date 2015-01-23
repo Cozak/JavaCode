@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/annBtn_width"
+    android:layout_height="@dimen/annBtn_height"
+    android:gravity="center_horizontal"
+    android:background="@drawable/maincalendarbutton2" > 
+    
+    <ImageView
+	    android:id="@+id/main_calendar_together_day_words_togather"
+	    android:layout_width="38dp"
+	    android:layout_height="29dp"
+	    android:layout_marginTop="34dp"
+	    android:layout_marginLeft="11dp"
+	    android:background="@drawable/main_calendar_together_day_words_togather" />
+    
+    <ImageView
+	    android:id="@+id/main_calendar_together_day_word_day"
+	    android:layout_width="9dp"
+	    android:layout_height="15dp"
+	    android:layout_marginTop="70dp"
+	    android:layout_marginRight="15dp"
+	    android:layout_alignParentRight="true"
+	    android:background="@drawable/main_calendar_together_day_word_day" />
+    
+    <ImageView
+	    android:id="@+id/main_calendar_together_day_right_1"
+	    android:layout_width="14dp"
+	    android:layout_height="18dp"
+	    android:layout_marginTop="60dp"
+	    android:layout_marginRight="5dp"
+	    android:layout_toLeftOf="@id/main_calendar_together_day_word_day"
+	    android:background="@drawable/main_calendar_together_day_num0" />
+    
+</RelativeLayout>

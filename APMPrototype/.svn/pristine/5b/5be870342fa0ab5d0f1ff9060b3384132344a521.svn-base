@@ -1,0 +1,27 @@
+package com.dell.prototype.apm.instrumentation;
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: lliu2
+ * Date: 9/9/14
+ * Time: 2:30 AM
+ * To change this template use File | Settings | File Templates.
+ */
+public class JdbcTraceMethodInfo extends TraceMethodInfo {
+
+    public String getSql() {
+        return sql;
+    }
+
+    private final String sql;
+
+    public JdbcTraceMethodInfo(StackTraceElement[] stackTraceElements, String sql) {
+        super(stackTraceElements);
+        this.sql = sql;
+    }
+
+    @Override
+    public String toString() {
+        return " ( " + super.toString() + " sql: " + sql + " ) ";
+    }
+}

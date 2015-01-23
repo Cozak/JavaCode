@@ -1,0 +1,45 @@
+package com.dell.prototype.apm.instrumentation;
+
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: lliu2
+ * Date: 9/2/14
+ * Time: 4:31 PM
+ * To change this template use File | Settings | File Templates.
+ */
+public class TraceMethodInfo {
+    private final String clazz;
+    private final String method;
+    private final List<StackTraceElement> stackTraceElements;
+
+    public String getClazz() {
+        return clazz;
+    }
+
+    public String getMethod() {
+        return method;
+    }
+
+    public TraceMethodInfo(StackTraceElement[] stackTraceElements) {
+        this.clazz = stackTraceElements[1].getClassName();
+        this.method = stackTraceElements[1].getMethodName();
+        this.stackTraceElements = Arrays.asList(stackTraceElements).subList(1, stackTraceElements.length);
+    }
+
+    public List<StackTraceElement> getStackTraceElements() {
+        return stackTraceElements;
+    }
+
+    @Override
+    public String toString() {
+        return new StringBuilder()
+                .append(" ( ")
+                .append(" class: ").append(clazz)
+                .append(" method: ").append(method)
+                .append(" ) ")
+                .toString();
+    }
+}

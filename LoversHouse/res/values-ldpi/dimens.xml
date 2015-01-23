@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="activity_config_bgalpha" format="float" type="dimen">0.3</item>
+
+    <dimen name="panel_headAndPanel">10.0dip</dimen>
+    <dimen name="set_imgWidth">50.0dip</dimen>
+    <dimen name="set_imgHeight">50.0dip</dimen>
+    <dimen name="myaccountTitleSize">20.0dip</dimen>
+    <dimen name="panel_topJSXtempLLWidth">155.0dip</dimen>
+    <dimen name="setappearancedeco">5dp</dimen>
+    <dimen name="setappearancebody">45dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="weatherwidth">100.0dip</dimen>
+    <dimen name="weatherheight">100.0dip</dimen>
+    <dimen name="weatherleft">12.0dip</dimen>
+    <dimen name="weathertop">30dip</dimen>
+    <dimen name="person_portraitcloth">60dp</dimen>
+    <dimen name="girl_portraitcloth">80dp</dimen>
+
+    <!-- 登陆界面使用相对参数 -->
+    <!-- 爱心的使用参数 -->
+    <dimen name="heart_width">100dp</dimen>
+    <dimen name="heart_height">90dp</dimen>
+    <dimen name="heart_paddingTop">30dp</dimen>
+    <!-- 字的使用参数 -->
+    <dimen name="text_width">150dp</dimen>
+    <dimen name="text_height">28dp</dimen>
+    <dimen name="text_paddingTop">3dp</dimen>
+    <dimen name="text_paddingBottom">3dp</dimen>
+    <!-- 插入图片使用参数 -->
+    <dimen name="image_padding">1dp</dimen>
+    <!-- 邮箱使用参数 -->
+    <dimen name="ID_size">16dp</dimen>
+    <dimen name="ID_padding">10dp</dimen>
+    <dimen name="ID_padding_marginleft">15dp</dimen>
+    <!-- 邮箱输入框使用参数 -->
+    <dimen name="edit_email_width">160dp</dimen>
+    <dimen name="edit_email_height">38dp</dimen>
+    <dimen name="edit_email_size">16dp</dimen>
+    <dimen name="edit_email_marginRight">40dp</dimen>
+    <dimen name="edit_email_marginLeft">10dp</dimen>
+    <!-- 密码使用参数 -->
+    <dimen name="password_size">16dp</dimen>
+    <dimen name="password_padding">10dp</dimen>
+    <dimen name="password_marginTop">5dp</dimen>
+    <dimen name="password_marginleft">15dp</dimen>
+    <!-- 密码输入框使用参数 -->
+    <dimen name="edit_password_width">160dp</dimen>
+    <dimen name="edit_password_height">38dp</dimen>
+    <dimen name="edit_password_marginTop">5dp</dimen>
+    <dimen name="edit_password_marginRight">40dp</dimen>
+    <dimen name="edit_password_marginLeft">10dp</dimen>
+    <dimen name="edit_password_size">16dp</dimen>
+    <!-- 提示栏 -->
+    <dimen name="stateTv_height">15dp</dimen>
+    <dimen name="stateTv_marginTop">5dp</dimen>
+    <!-- 阅读注意事项 复选框 -->
+    <dimen name="privacySelect_width">20dp</dimen>
+    <dimen name="privacySelect_height">15dp</dimen>
+    <!-- 阅读注意事项 -->
+    <dimen name="privacyButton_width">200dp</dimen>
+    <dimen name="privacyButton_height">15dp</dimen>
+ 	<!-- 已有密码 直接登录 -->
+ 	<dimen name="tologinButton_width">120dp</dimen>
+ 	<dimen name="tologinButton_height">20dp</dimen>
+ 	<dimen name="tologinButton_marginTop">10dp</dimen>
+    <dimen name="tologinButton_marginRight">0dp</dimen>
+    <!-- 设置中按钮的高度-->
+    <dimen name="setButton_marginTop">4dp</dimen>
+    <dimen name="setButton_marginBottom">4dp</dimen>
+    <dimen name="setButton_height">20dp</dimen>
+    <dimen name="setbutton_textsize">15dp</dimen>
+    <!-- 登陆按钮使用参数 -->
+    <dimen name="login_width">200dp</dimen>
+    <dimen name="login_height">35dp</dimen>
+    <dimen name="loginButton_marginTop">25dp</dimen>
+    <dimen name="loginButton_paddingTop">30dp</dimen>
+    <dimen name="loginButton_paddingBottom">3dp</dimen>
+    <dimen name="loginButton_paddingLeft">70dp</dimen>
+    <dimen name="loginButton_paddingRight">50dp</dimen>
+    <!-- 注册与忘记密码按钮使用参数 -->
+    <dimen name="Button_width">130dp</dimen>
+    <dimen name="Button_height">75dp</dimen>
+    <dimen name="button_textSize">18dp</dimen>
+    <dimen name="layout_marginTop">5dp</dimen>
+    <dimen name="register_marginLeft">20dp</dimen>
+    <dimen name="forget_marginRight">20dp</dimen>
+
+    <!-- register界面使用参数 -->
+    <!-- rl_height使用参数 -->
+    <dimen name="rl_height">40dp</dimen>
+    <!-- registerback使用参数 -->
+    <dimen name="registerback_top">0dp</dimen>
+    <dimen name="registerback_left">5dp</dimen>
+    <dimen name="btn_height">28dp</dimen>
+    <dimen name="btn_width">28dp</dimen>
+    <!-- regnext使用参数 -->
+    <dimen name="btn_regnext_top">0dp</dimen>
+    <dimen name="btn_regnext_right">5dp</dimen>
+
+    <!-- 中心图参数 -->
+    <dimen name="image_index_width">110dp</dimen>
+    <dimen name="image_index_height">110dp</dimen>
+    <dimen name="image_index_margin_top">5dp</dimen>
+    <dimen name="image_index_margin_right">20dp</dimen>
+    <!-- 女孩儿图片参数 -->
+    <dimen name="image_girl_width">45dp</dimen>
+    <dimen name="image_girl_height">45dp</dimen>
+    <dimen name="image_girl_marginTop">15dp</dimen>
+    <dimen name="image_girl_marginBottom">0dp</dimen>
+    <dimen name="image_girl_marginRight">5dp</dimen>
+    <dimen name="image_girl_marginLeft">37dp</dimen>
+    <!-- 男孩儿图片参数 -->
+    <dimen name="image_boy_width">45dp</dimen>
+    <dimen name="image_boy_height">45dp</dimen>
+    <dimen name="image_boy_marginTop">15dp</dimen>
+    <dimen name="image_boy_marginBottom">0dp</dimen>
+    <dimen name="image_boy_marginLeft">5dp</dimen>
+
+    <!-- 昵称参数 -->
+    <dimen name="nicknameEt_width">220dp</dimen>
+    <dimen name="nicknameEt_height">30dp</dimen>
+    <dimen name="nicknameEt_marginLeft">37dp</dimen>
+    <dimen name="nicknameEt_marginTop">3dp</dimen>
+    <dimen name="nicknameEt_marginBottom">4dp</dimen>
+    <!-- 邮箱参数 -->
+    <dimen name="emailEt_width">220dp</dimen>
+    <dimen name="emailEt_height">30dp</dimen>
+    <dimen name="emailEt_marginLeft">37dp</dimen>
+    <dimen name="emailEt_marginTop">3dp</dimen>
+    <dimen name="emailEt_marginBottom">4dp</dimen>
+    <!-- 密码参数 -->
+    <dimen name="passEt_width">220dp</dimen>
+    <dimen name="passEt_height">30dp</dimen>
+    <dimen name="passEt_marginTop">3dp</dimen>
+    <dimen name="passEt_marginBottom">4dp</dimen>
+    <!-- 再次输入密码参数 -->
+    <dimen name="passagainEt_width">220dp</dimen>
+    <dimen name="passagainEt_height">30dp</dimen>
+    <dimen name="passagainEt_marginTop">3dp</dimen>
+    <dimen name="passagainEt_marginBottom">8dp</dimen>
+    
+    
+    
+    <!-- setappearance界面使用参数 -->
+    <!-- 注册账号使用参数 -->
+    <dimen name="create_an_account_head_height">60dp</dimen>
+    <!-- 返回按钮使用参数 -->
+    <dimen name="setappback_width">50dp</dimen>
+    <dimen name="setappback_height">40dp</dimen>
+    <!-- 完成按钮使用参数 -->
+    <dimen name="setfinish_width">50dp</dimen>
+    <dimen name="setfinish_height">40dp</dimen>
+    <!-- 设置framelayout使用参数 -->
+    <dimen name="myFl_MarginTop">5dp</dimen>
+    <dimen name="myFl_MarginBottom">10dp</dimen>
+
+</resources>

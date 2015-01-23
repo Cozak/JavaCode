@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_msg_received_boy_normal"
+    android:orientation="vertical" 
+    android:visibility="invisible">
+    
+    <!-- 帐号 -->
+    <RelativeLayout
+        android:id="@+id/accountMatch"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+     android:layout_marginTop="@dimen/setButton_marginTop"
+     android:layout_marginBottom="@dimen/setButton_marginBottom">
+     <TextView 
+                    android:textColor="@color/white" 
+                    android:id="@+id/targetaccountTitle" 
+                      android:layout_alignParentLeft="true"
+                      android:layout_centerInParent="true"
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:text="账号: " 
+                    android:textSize="@dimen/setbutton_textsize"
+                    />
+   
+     <TextView 
+                    android:textColor="@color/white" android:id="@+id/targetaccountText" 
+                    android:layout_width="wrap_content" android:layout_height="match_parent" 
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/targetaccbtn"
+                    android:layout_toRightOf="@id/targetaccountTitle"
+                    android:textSize="@dimen/setbutton_textsize"
+                    android:gravity="center_vertical"
+                    android:text="暂无"
+                    android:singleLine="false"
+                    />
+       <EditText     
+                    android:visibility="gone"
+                    android:textColor="#000000" 
+                    
+                    android:id="@+id/targetaccET" 
+                    android:layout_toLeftOf="@+id/targetaccbtn"
+                    android:layout_toRightOf="@id/targetaccountTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/_0025_me_enterbox"
+                    android:textSize="@dimen/setbutton_textsize"
+                    android:inputType="textEmailAddress" />
+       <RelativeLayout 
+         android:id="@+id/targetaccbtn"
+         android:layout_width="30dp" 
+            android:layout_height="match_parent"
+         android:layout_alignParentRight="true"
+         >
+         <ImageButton android:id="@+id/targetaccImgBtn"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+             android:background="@drawable/setting_ta_write" 
+             android:layout_centerInParent="true"
+             />
+        
+  
+         <ImageButton android:id="@+id/acctransImgBtn"
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent"
+             android:background="@color/transparent" 
+              android:tag="0"/>
+         </RelativeLayout>
+     </RelativeLayout>
+     
+     <View 
+         android:id="@+id/viewline"
+         android:layout_below="@+id/accountMatch"
+         android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        />
+     <!-- 昵称 -->
+        <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:id="@+id/usernameLayout" 
+    android:layout_below="@+id/viewline"
+    >
+     <TextView 
+                    android:textColor="@color/white" 
+                    android:id="@+id/targetusernameTitle" 
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:text="昵称: " 
+                    android:textSize="@dimen/setbutton_textsize"/>
+         <TextView 
+                    android:textColor="@color/white" android:id="@+id/targetusernameText" 
+                    android:layout_width="wrap_content" android:layout_height="40dp" 
+                    android:layout_toLeftOf="@+id/targetbtn"
+                    android:layout_toRightOf="@id/targetusernameTitle"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textSize="@dimen/setbutton_textsize"
+                    
+                    />
+   
+     <EditText     
+                    android:visibility="gone"
+                    android:textColor="#000000" 
+                    android:id="@+id/targetusernameET" 
+                    android:layout_toLeftOf="@+id/targetbtn"
+                    android:layout_toRightOf="@id/targetusernameTitle"
+                    android:hint="输入用户名"
+                    android:text="honey"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                    android:background="@drawable/_0025_me_enterbox"
+                    android:textSize="@dimen/setbutton_textsize"
+                    android:paddingLeft="10dp"
+                    android:inputType="textVisiblePassword"/>
+        
+     <RelativeLayout 
+         android:id="@+id/targetbtn"
+         android:layout_width="30dp" 
+            android:layout_height="match_parent"
+         android:layout_alignParentRight="true"
+         >
+         
+     	<ImageButton android:id="@+id/targetusernameImgBtn"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+             android:background="@drawable/setting_ta_write" 
+             android:layout_centerInParent="true"
+             />
+     	<ImageButton android:id="@+id/targettransImgBtn"
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent"
+             android:background="@color/transparent" 
+              android:tag="0"/>
+     </RelativeLayout>
+     
+     
+     </RelativeLayout>
+     
+     <TextView 
+         android:id="@+id/hintinvite"
+         android:layout_below="@+id/usernameLayout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textSize="14sp"
+         android:textColor="@color/white"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="5dp"
+         android:text="请向您的另一半发出邀请"
+    	 android:gravity="center"
+         android:visibility="gone"/>
+     
+        <RelativeLayout 
+            android:id="@+id/matchbutton"
+            android:layout_below="@+id/hintinvite"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="3dp"
+		    android:layout_marginRight="3dp">
+
+    
+     <ImageButton android:id="@+id/tarbetogImgBtn"
+         	android:tag="0"
+            android:layout_centerHorizontal="true" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_ta_apply" 
+             />
+      <TextView
+         android:visibility="gone"
+         android:id="@+id/watingResponse"
+         android:layout_below="@id/tarbetogImgBtn"
+         android:layout_centerHorizontal="true" 
+         android:textSize="@dimen/setbutton_textsize"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:gravity="center_horizontal"
+         android:text="等待对方回复。。。"
+         android:textColor="@color/white"
+         />
+   
+     </RelativeLayout>
+</RelativeLayout>

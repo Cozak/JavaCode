@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="calendar_prompt_policy">  
+	    <item>关闭提醒</item>  
+	    <item>每个月</item>  
+	    <item>每百天</item>  
+	    <item>每年</item>
+    </string-array> 
+    
+</resources>

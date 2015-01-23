@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/couple_abuse_margin_top"
+        android:scaleX="@dimen/couple_abuse_scale"
+        android:scaleY="@dimen/couple_abuse_scale" >
+
+        <ImageView
+            android:id="@+id/boy_abuse_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter" />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/boy_abuse_head" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_abuse_head" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/girl_abuse_head" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/girl_abuse_head" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/girl_abuse_face" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/girl_abuse_face" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/girl_abuse_body" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/girl_abuse_body" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/girl_abuse_clothes" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/girl_abuse_clothes01" -->
+        <!-- android:visibility="visible" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/girl_abuse_hair" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/girl_abuse_hair01" -->
+        <!-- android:visibility="visible" /> -->
+
+        <ImageView
+            android:id="@+id/girl_abuse_hand"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@anim/couple_abuse_hand"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

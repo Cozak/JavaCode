@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+     >
+<RelativeLayout 
+    
+         android:layout_width="200dp"
+             android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    <FrameLayout
+      android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       >
+
+        <!-- 显示图片 -->
+
+
+        <!-- 自定义的截图View -->
+
+        <com.minus.cropimage.CaptureView
+            android:id="@+id/capture"
+            android:adjustViewBounds="true"
+          android:maxHeight="355dp"
+          android:maxWidth="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        
+          />
+
+        <!-- 截图显示 -->
+
+      
+    </FrameLayout>
+</RelativeLayout>
+    <Button
+        android:id="@+id/btn_crop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="保存" />
+     <Button
+        android:id="@+id/btn_cancel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+        android:text="取消" />
+    
+
+</RelativeLayout>

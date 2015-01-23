@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	   android:padding="6dp"
+	     >
+      <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:id="@+id/textLL">
+	 <!--  android:descendantFocusability="blocksDescendants" -->
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" 
+	        android:gravity="center_horizontal">
+	
+	     
+	        
+	    </LinearLayout>
+	
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginRight="5dp" >
+	        
+	        
+	           <ImageView 
+	           android:id="@+id/iv_userhead" 
+	           android:layout_width="52dp"
+		       android:layout_height="52dp"
+	           android:focusable="false" 
+	           android:layout_alignParentRight="true" 
+               android:layout_alignParentTop="true" 
+	           />
+ 				
+ 			 <LinearLayout
+            android:id="@+id/audio_play_layout"
+            style="@style/chat_content_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/iv_userhead"
+            android:background="@drawable/chat_voice_frame"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal" >
+
+            
+              <FrameLayout
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="9.0dip"
+                    android:layout_marginRight="9.0dip" >
+
+                    <ImageView
+                          android:tag="0"
+                        android:id="@+id/play_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="center"
+                        android:background="@drawable/chat_voice_start" />
+
+                    <ProgressBar
+                        android:id="@+id/download_progress"
+                        style="@style/imageLoadingProg"
+                        android:layout_width="20.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+
+            <ProgressBar
+                android:id="@+id/play_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0.0dip"
+                android:layout_height="2.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="14.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:indeterminate="false"
+                android:max="100"
+                 android:visibility="gone" 
+                android:progressDrawable="@drawable/horizontal_progress_bar_sound_play"
+                />
+
+           
+        </LinearLayout>
+        
+        <TextView
+                android:id="@+id/audio_len"
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14.0dip"
+                android:textColor="@color/class_E"
+                android:textSize="14.0dip"
+                     
+                 android:layout_toLeftOf="@id/audio_play_layout"
+                />
+
+    <TextView
+	            android:id="@+id/tv_sendtime"
+	            android:layout_alignLeft="@id/audio_play_layout"
+	             android:layout_below="@id/audio_play_layout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	             style="@style/chat_text_date_style"
+	           	android:text="07-01 14:30 发送中。。。"/>
+	        
+	    </RelativeLayout>
+           </LinearLayout>
+	    
+</LinearLayout>
+
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/iv_userhead"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:focusable="false" />
+
+        <LinearLayout
+            android:id="@+id/audio_play_layout"
+            style="@style/chat_content_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/iv_userhead"
+            android:background="@drawable/chat_voice_frame"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal" >
+
+            
+              <FrameLayout
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="9.0dip"
+                    android:layout_marginRight="9.0dip" >
+
+                    <ImageView
+                          android:tag="0"
+                        android:id="@+id/play_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="center"
+                        android:background="@drawable/chat_voice_start" />
+
+                    <ProgressBar
+                        android:id="@+id/download_progress"
+                        style="@style/imageLoadingProg"
+                        android:layout_width="20.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+
+            <ProgressBar
+                android:id="@+id/play_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0.0dip"
+                android:layout_height="2.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="14.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:indeterminate="false"
+                android:max="100"
+                 android:visibility="gone" 
+                android:progressDrawable="@drawable/horizontal_progress_bar_sound_play"
+                />
+
+           
+        </LinearLayout>
+        
+        <TextView
+                android:id="@+id/audio_len"
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14.0dip"
+                android:textColor="@color/class_E"
+                android:textSize="14.0dip"
+                     
+                 android:layout_toLeftOf="@id/audio_play_layout"
+                />
+
+    <TextView
+	            android:id="@+id/tv_sendtime"
+	            android:layout_alignLeft="@id/audio_play_layout"
+	             android:layout_below="@id/audio_play_layout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	             style="@style/chat_text_date_style"
+	           	android:text="07-01 14:30 发送中。。。"/>
+    </RelativeLayout> -->

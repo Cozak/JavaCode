@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/girl_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      >
+
+     
+        <ImageView
+            android:id="@+id/ReadGirl_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       />
+
+
+        <ImageView
+            android:id="@+id/ReadGirl_hand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/readgirl_hand" />
+
+        <ImageView
+            android:id="@+id/ReadGirl_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/readgirl_eye" />
+    </FrameLayout>

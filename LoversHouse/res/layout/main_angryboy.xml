@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <FrameLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/angry_boy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/angry_boy_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+       
+        <ImageView
+            android:id="@+id/Angryboy_foot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/angryboy_foot" />
+    </FrameLayout>

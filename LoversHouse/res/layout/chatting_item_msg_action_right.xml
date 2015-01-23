@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:padding="6dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_userhead"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:focusable="false" />
+
+        <ImageView
+            android:id="@+id/chat_action_round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/iv_userhead"
+            android:background="@drawable/chat_action_round_woman"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_chatcontent"
+            style="@style/chat_action_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/chat_action_round"
+            android:text="哼！我生气了！！" />
+
+        <ProgressBar
+            android:id="@+id/sending_progressBar"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_chatcontent"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@id/tv_chatcontent"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/sendfail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_chatcontent"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@id/tv_chatcontent"
+            android:background="@drawable/resend_normal"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_sendtime"
+            style="@style/chat_text_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv_chatcontent"
+            android:layout_below="@id/tv_chatcontent"
+            android:layout_toLeftOf="@id/tv_chatcontent"
+            android:text="07-01 14:50 已发送" />
+    </RelativeLayout>
+
+</RelativeLayout>

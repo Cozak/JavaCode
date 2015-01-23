@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/delete_diary"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/diary_delete_confirm_box">
+
+    <Button
+        android:id="@+id/diarydelete_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="140sp"
+        android:layout_marginTop="70sp"
+        android:background="@drawable/no_button_selector" 
+       />
+
+    <Button
+        android:id="@+id/diarydelete_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140sp"
+        android:layout_marginTop="70sp"
+        android:background="@drawable/yes_button_selector"
+        />
+
+</RelativeLayout>

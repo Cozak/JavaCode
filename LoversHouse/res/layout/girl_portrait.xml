@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/girl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@null" >
+
+    <FrameLayout
+        android:id="@+id/girlFl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" >
+
+        
+        <ImageView
+            android:id="@+id/girlImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/girl_portrait_body" />
+
+        <ImageView
+            android:id="@+id/staticgirl_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+             android:background="@drawable/static_girl_eye01" />
+
+       
+         <ImageView
+            android:id="@+id/girlhairAIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          
+            android:visibility="visible" />
+        <ImageView
+            android:id="@+id/girlbodyAIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/girldecoAIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible" />
+        
+         <ImageView
+            android:id="@+id/staticgirl_hand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:background="@drawable/static_girl_hand03"
+            />
+
+      
+    </FrameLayout>
+
+</RelativeLayout>

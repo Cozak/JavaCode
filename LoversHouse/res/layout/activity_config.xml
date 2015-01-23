@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/configRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.minius.ui.MyFrameLayout
+        android:id="@+id/bgFl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <ImageView 
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></ImageView>
+    </com.minius.ui.MyFrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/mRl"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        
+        <ListView
+            android:id="@+id/menuList"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/setll"
+            android:cacheColorHint="#000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:scrollingCache="false" />
+
+        <ScrollView 
+            android:id="@+id/scrollpop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/menuList">
+            <RelativeLayout
+		        android:id="@+id/childpop"
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:orientation="vertical" >
+		        <include layout="@layout/myaccountpopview"
+		        	android:id="@+id/myaccount"/>
+			    <include layout="@layout/targetpopview"
+			        android:id="@+id/taraccount"/>
+			    <include layout="@layout/smallhousepopupview"
+			        android:id="@+id/smallhouse"/>
+			    <include layout="@layout/softwarepopupview"
+			        android:id="@+id/software"/>
+            </RelativeLayout>
+        </ScrollView>
+        
+        
+        
+    </RelativeLayout>
+    
+</FrameLayout>

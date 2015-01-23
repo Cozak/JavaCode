@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF" >
+
+    <FrameLayout
+        android:id="@+id/calendar_add_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/memoday_newnavigationbar_ios6" />
+
+        <ImageView
+            android:id="@+id/calendar_add_canclebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="@dimen/weather_back_marginLeft"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_button_selector" />
+
+        <ImageView
+            android:id="@+id/calendar_add_completebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/weather_back_marginLeft"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/complete_button_selector" />
+    </FrameLayout>
+    <!--  -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@id/calendar_add_top"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/memoday_add_background" >
+
+        <ImageButton
+            android:id="@+id/calendar_add_title_button"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="#00000000"
+            android:gravity="center"
+            android:src="@drawable/memoday_add_icon1" />
+
+        <EditText
+            android:id="@+id/calendar_add_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignTop="@id/calendar_add_title_button"
+            android:layout_marginRight="0dp"
+            android:layout_toRightOf="@id/calendar_add_title_button"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:hint="点击填写"
+            android:singleLine="true"
+            android:textColor="#f96282"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/calendar_add_date_button"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="57dp"
+            android:background="#00000000"
+            android:gravity="center"
+            android:src="@drawable/memoday_add_icon2" />
+
+        <TextView
+            android:id="@+id/calendar_add_date"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignTop="@id/calendar_add_date_button"
+            android:layout_marginRight="0dp"
+            android:layout_toRightOf="@id/calendar_add_date_button"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="2014-07-07"
+            android:textColor="#adadad"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/calendar_add_prompt_button"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="115dp"
+            android:background="#00000000"
+            android:gravity="center"
+            android:src="@drawable/memoday_add_icon3" />
+
+        <TextView
+            android:id="@+id/calendar_add_prompt_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignTop="@id/calendar_add_prompt_button"
+            android:layout_marginRight="0dp"
+            android:layout_toRightOf="@id/calendar_add_prompt_button"
+            android:gravity="center_vertical"
+            android:text="点击设置提醒:"
+            android:textColor="#adadad"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/calendar_add_prompt"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:entries="@array/calendar_prompt_policy"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

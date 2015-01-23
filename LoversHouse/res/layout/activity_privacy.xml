@@ -1,0 +1,547 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        		android:id="@+id/privacy_top"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pink"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/service_navigation" />
+
+                <ImageView
+                    android:id="@+id/privacy_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/weather_back_marginLeft"
+                    android:background="@drawable/back_button_selector"
+                    android:clickable="true"
+                    android:scaleType="fitCenter" />
+            </FrameLayout>
+    
+	<ScrollView
+       android:id="@+id/privacy_content"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:background="@color/white" 
+       android:layout_below="@+id/privacy_top">
+
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:orientation="vertical">
+    <TextView 
+        android:id="@+id/a1"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:gravity="center"
+       android:textStyle="bold"
+       android:textSize="18sp"
+       android:textColor="#f56294"
+       android:text="@string/a0"
+        />
+
+    <TextView 
+        android:id="@+id/a2"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a1"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a1"
+        />
+    
+    <TextView 
+        android:id="@+id/a3"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="3dp"
+       android:layout_below="@+id/a2"
+       android:textStyle="bold"
+       android:textSize="15sp"
+       android:textColor="#000000"
+       android:text="1、服务条款的确认和接纳"
+        />
+    
+    <TextView 
+        android:id="@+id/a4"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a3"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a2"
+        />
+    
+    <TextView 
+        android:id="@+id/a5"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="3dp"
+       android:layout_below="@+id/a4"
+       android:textStyle="bold"
+       android:textSize="15sp"
+       android:textColor="#000000"
+       android:text="2、服务简介"
+        />
+    
+    <TextView 
+        android:id="@+id/a6"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a5"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a3"
+        />
+    
+    <TextView 
+        android:id="@+id/a7"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="3dp"
+       android:layout_below="@+id/a6"
+       android:textStyle="bold"
+       android:textSize="15sp"
+       android:textColor="#000000"
+       android:text="3、用户使用规则"/>
+    
+    <TextView 
+        android:id="@+id/a8"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="1dp"
+       android:layout_below="@+id/a7"
+       android:textStyle="bold"
+       android:textSize="13sp"
+       android:textColor="#000000"
+       android:text="3.1 软件的获取和安装"/>
+    
+    <TextView 
+        android:id="@+id/a9"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a8"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a4"
+        />
+    
+    <TextView 
+        android:id="@+id/a10"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="1dp"
+       android:layout_below="@+id/a9"
+       android:textStyle="bold"
+       android:textSize="13sp"
+       android:textColor="#000000"
+       android:text="3.2 用户个人资料真实性"/>
+       
+    <TextView 
+        android:id="@+id/a11"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a10"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a5"
+        />
+       
+    <TextView 
+        android:id="@+id/a12"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="1dp"
+       android:layout_below="@+id/a11"
+       android:textStyle="bold"
+       android:textSize="13sp"
+       android:textColor="#000000"
+       android:text="3.3用户帐号、密码"/>
+       
+    <TextView 
+        android:id="@+id/a13"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a12"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a6"/>
+    
+    <TextView 
+        android:id="@+id/a14"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="1dp"
+       android:layout_below="@+id/a13"
+       android:textStyle="bold"
+       android:textSize="13sp"
+       android:textColor="#000000"
+       android:text="3.4服务用途"/>
+       
+    <TextView 
+        android:id="@+id/a15"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a14"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a7"/>
+    
+    <TextView 
+        android:id="@+id/a16"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="1dp"
+       android:layout_below="@+id/a15"
+       android:textStyle="bold"
+       android:textSize="13sp"
+       android:textColor="#000000"
+       android:text="3.5 软件许可权限"/>
+       
+    <TextView 
+        android:id="@+id/a17"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a16"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a8"/>
+    
+    <TextView 
+        android:id="@+id/a18"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="1dp"
+       android:layout_below="@+id/a17"
+       android:textStyle="bold"
+       android:textSize="13sp"
+       android:textColor="#000000"
+       android:text="3.6 软件更新"/>
+       
+    <TextView 
+        android:id="@+id/a19"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a18"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a9"/>
+    
+    <TextView 
+        android:id="@+id/a20"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="1dp"
+       android:layout_below="@+id/a19"
+       android:textStyle="bold"
+       android:textSize="13sp"
+       android:textColor="#000000"
+       android:text="3.7 接受系统邮件、消息"/>
+       
+    <TextView 
+        android:id="@+id/a21"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a20"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a10"/>
+    
+    <TextView 
+        android:id="@+id/a22"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="1dp"
+       android:layout_below="@+id/a21"
+       android:textStyle="bold"
+       android:textSize="13sp"
+       android:textColor="#000000"
+       android:text="3.8维护网络安全"/>
+       
+    <TextView 
+        android:id="@+id/a23"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a22"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a11"/>
+    
+    <TextView 
+        android:id="@+id/a24"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="1dp"
+       android:layout_below="@+id/a23"
+       android:textStyle="bold"
+       android:textSize="13sp"
+       android:textColor="#000000"
+       android:text="3.9遵守相关法规"/>
+       
+    <TextView 
+        android:id="@+id/a25"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a24"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a12"/>
+    
+    <TextView 
+        android:id="@+id/a26"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="1dp"
+       android:layout_below="@+id/a25"
+       android:textStyle="bold"
+       android:textSize="13sp"
+       android:textColor="#000000"
+       android:text="3.10服务的变更、中断、终止"/>
+       
+    <TextView 
+        android:id="@+id/a27"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a26"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a13"/>
+    
+    <TextView 
+        android:id="@+id/a28"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="3dp"
+       android:layout_below="@+id/a27"
+       android:textStyle="bold"
+       android:textSize="15sp"
+       android:textColor="#000000"
+       android:text="4、服务风险及免责声明"/>
+    
+    <TextView 
+        android:id="@+id/a29"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="1dp"
+       android:layout_below="@+id/a28"
+       android:textStyle="bold"
+       android:textSize="13sp"
+       android:textColor="#000000"
+       android:text="4.1 不可抗因素"/>
+    
+    <TextView 
+        android:id="@+id/a30"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a29"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a14"
+        />
+    
+    <TextView 
+        android:id="@+id/a31"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="1dp"
+       android:layout_below="@+id/a30"
+       android:textStyle="bold"
+       android:textSize="13sp"
+       android:textColor="#000000"
+       android:text="4.2 系统故障及维修等因素"/>
+    
+    <TextView 
+        android:id="@+id/a32"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a31"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a15" />
+    
+    <TextView 
+        android:id="@+id/a33"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="1dp"
+       android:layout_below="@+id/a32"
+       android:textStyle="bold"
+       android:textSize="13sp"
+       android:textColor="#000000"
+       android:text="4.3 第三方侵权"/>
+    
+    <TextView 
+        android:id="@+id/a34"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a33"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a16" />
+    
+    <TextView 
+        android:id="@+id/a35"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="1dp"
+       android:layout_below="@+id/a34"
+       android:textStyle="bold"
+       android:textSize="13sp"
+       android:textColor="#000000"
+       android:text="4.4广告"/>
+    
+    <TextView 
+        android:id="@+id/a36"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a35"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a17" />
+    
+    <TextView 
+        android:id="@+id/a37"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="1dp"
+       android:layout_below="@+id/a36"
+       android:textStyle="bold"
+       android:textSize="13sp"
+       android:textColor="#000000"
+       android:text="4.5中断服务"/>
+    
+    <TextView 
+        android:id="@+id/a38"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a37"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a18" />
+    
+    <TextView 
+        android:id="@+id/a39"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="3dp"
+       android:layout_below="@+id/a38"
+       android:textStyle="bold"
+       android:textSize="15sp"
+       android:textColor="#000000"
+       android:text="5、知识产权声明"/>
+    
+    <TextView 
+        android:id="@+id/a40"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a39"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a19" />
+    
+    <TextView 
+        android:id="@+id/a41"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="3dp"
+       android:layout_below="@+id/a40"
+       android:textStyle="bold"
+       android:textSize="15sp"
+       android:textColor="#000000"
+       android:text="6、用户隐私保护"/>
+    
+    <TextView 
+        android:id="@+id/a42"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a41"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a20" />
+    
+    <TextView 
+        android:id="@+id/a43"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="3dp"
+       android:layout_below="@+id/a42"
+       android:textStyle="bold"
+       android:textSize="15sp"
+       android:textColor="#000000"
+       android:text="7、适用法律及争议管辖"/>
+    
+    <TextView 
+        android:id="@+id/a44"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a43"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a21" />
+    
+    <TextView 
+        android:id="@+id/a45"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="3dp"
+       android:layout_below="@+id/a44"
+       android:textStyle="bold"
+       android:textSize="15sp"
+       android:textColor="#000000"
+       android:text="8、顶毅拥有对本协议服务条款的解释权"/>
+    
+    <TextView 
+        android:id="@+id/a46"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a45"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a22" />
+    
+    <TextView 
+        android:id="@+id/a47"
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/a46"
+       android:layout_marginTop="5dp"
+       android:textSize="12sp"
+       android:textColor="#000000"
+       android:text="@string/a23" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </RelativeLayout>
+    </ScrollView>
+       
+</RelativeLayout>

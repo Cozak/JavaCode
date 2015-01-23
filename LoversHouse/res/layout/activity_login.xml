@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.minus.lovershouse.util.ResizeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- 登录界面最上面的图片 -->
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/a_0000_background"
+        android:fillViewport="true" >
+
+        <!-- 插入整个布局的背景图片 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 登录界面最上面的图片 -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="@dimen/reg_top_height" -->
+            <!-- android:background="@drawable/login_navigation" -->
+            <!-- android:focusable="true" -->
+            <!-- android:focusableInTouchMode="true" > -->
+
+
+            <!-- <ImageButton -->
+            <!-- android:id="@+id/login_back" -->
+            <!-- android:layout_width="@dimen/weather_back_width" -->
+            <!-- android:layout_height="@dimen/weather_back_height" -->
+            <!-- android:layout_marginLeft="@dimen/weather_back_marginLeft" -->
+            <!-- android:background="@drawable/back_button_selector" -->
+            <!-- android:clickable="true" -->
+            <!-- android:layout_centerVertical="true"/> -->
+            <!-- </RelativeLayout> -->
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pink"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/login_navigation" />
+
+                <ImageView
+                    android:id="@+id/login_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/weather_back_marginLeft"
+                    android:background="@drawable/back_button_selector"
+                    android:clickable="true"
+                    android:scaleType="fitCenter" />
+            </FrameLayout>
+            <!-- 水平布局，图像和输入信息的邮箱和密码 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/image_padding" />
+
+                <!-- 表格布局，包括账号和密码 -->
+
+                <TableLayout
+                    android:id="@+id/loginInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1" >
+
+                    <!-- 表格的第一行，账号文本和输入框，黑色粗体字，重心靠右，四周扩充5个像素 -->
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <!-- "邮箱"输入框，文本超出TextView的宽度的情况下，出现横拉条 -->
+
+                        <EditText
+                            android:id="@+id/userEditText"
+                            android:layout_width="@dimen/nicknameEt_width"
+                            android:layout_height="@dimen/nicknameEt_height"
+                            android:layout_marginLeft="@dimen/nicknameEt_marginLeft"
+                            android:layout_marginTop="@dimen/nicknameEt_marginTop"
+                            android:background="@drawable/a_0000_inputbox"
+                            android:hint="邮箱"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="10dp"
+                            android:scrollHorizontally="true"
+                            android:selectAllOnFocus="true"
+                            android:textColor="@color/red"
+                            android:textColorHint="@color/red"
+                            android:textSize="@dimen/userEditText_size" />
+                    </TableRow>
+                    <!-- 表格的第二行，密码和密码输入框，黑色粗体字，重心靠右，扩充5个像素 -->
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <!-- "密码"输入框；文本超出TextView的宽度的情况下，出现横拉条 -->
+
+                        <EditText
+                            android:id="@+id/pwdEditText"
+                            android:layout_width="@dimen/emailEt_width"
+                            android:layout_height="@dimen/emailEt_height"
+                            android:layout_marginLeft="@dimen/emailEt_marginLeft"
+                            android:layout_marginTop="@dimen/emailEt_marginTop"
+                            android:background="@drawable/a_0000_inputbox"
+                            android:ems="10"
+                            android:hint="密码"
+                            android:inputType="textPassword"
+                            android:paddingLeft="10dp"
+                            android:scrollHorizontally="true"
+                            android:textColor="@color/red"
+                            android:textColorHint="@color/red"
+                            android:textSize="@dimen/pwdEditText_size" >
+                        </EditText>
+                    </TableRow>
+
+                    <RelativeLayout
+                        android:id="@+id/loginSet"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/loginSet_marginTop" >
+
+                        <TextView
+                            android:id="@+id/loginstateTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/loginstateTv_height"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/loginstateTv_marginTop"
+                            android:gravity="center_horizontal"
+                            android:text="111111"
+                            android:textSize="@dimen/loginstateTv_textSize"
+                            android:visibility="visible" />
+
+                        <Button
+                            android:id="@+id/login"
+                            android:layout_width="@dimen/nicknameEt_width"
+                            android:layout_height="@dimen/nicknameEt_height"
+                            android:layout_below="@+id/loginstateTv"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/login_marginTop"
+                            android:background="@drawable/a_0000_login" />
+
+                        <!-- <Button -->
+                        <!-- android:id="@+id/forgetPassButton" -->
+                        <!-- android:layout_width="@dimen/forgetPassButton_width" -->
+                        <!-- android:layout_height="@dimen/forgetPassButton_height" -->
+                        <!-- android:layout_alignRight="@+id/login" -->
+                        <!-- android:layout_below="@+id/login" -->
+                        <!-- android:layout_marginRight="@dimen/forgetPassButton_marginRight" -->
+                        <!-- android:layout_marginTop="@dimen/forgetPassButton_marginTop" -->
+                        <!-- android:background="@drawable/a_0000_forgetthepassword" -->
+                        <!-- android:textColor="@drawable/add_forget_password_selector" -->
+                        <!-- android:textSize="@dimen/forgetPassButton_textSize" -->
+                        <!-- android:textStyle="bold" /> -->
+
+                        <RelativeLayout
+                            android:id="@+id/tologinLay"
+                            android:layout_width="145dp"
+                            android:layout_height="55dp"
+                            android:layout_alignRight="@+id/login"
+                            android:layout_below="@+id/login"
+                            android:layout_marginTop="@dimen/tologinButton_marginTop" >
+
+                            <Button
+                                android:layout_width="@dimen/forgetPassButton_width"
+                                android:layout_height="@dimen/forgetPassButton_height"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/a_0000_forgetthepassword" />
+
+                            <Button
+                                android:id="@+id/forgetPassButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/transparent" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </TableLayout>
+            </LinearLayout>
+
+            <!-- "登录"按钮，重心垂直居中，距顶部和底部3个像素，左右扩充80个像素 -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</com.minus.lovershouse.util.ResizeLayout>

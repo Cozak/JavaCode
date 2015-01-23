@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="darkslateblue">#483d8b</color>
+    <!-- 暗灰蓝色 -->
+    <color name="white">#ffffffff</color>
+    <color name="bright_foreground_dark">#ffffffff</color>
+    <color name="grid_state_pressed">#BB7dbcd3</color>
+    <color name="grid_state_focused">#777dbcd3</color>
+    <color name="light_gray"> #c0c0c0</color>
+    <color name="login_original">#6b6b6b</color>
+    <color name="login_after">#bbbbbb</color>
+    <color name="class_E">#ffbfbfbf</color>
+    <color name="half_tra">#90000000</color>
+    <color name="red">#f45080</color>
+     <color name="pink">#f96282</color>
+	<color name="lockred">#ff6666</color>
+    <color name="gesture_background">#ff303237</color>
+    <color name="color_hei_8">#00000000</color>
+      <color name="transparent">#00000000</color>
+	<color name="btntextcolor">#ff1E90FF</color><!--dialog中按钮字体颜色 -->
+    <drawable name="trans">@color/color_hei_8</drawable>
+</resources>

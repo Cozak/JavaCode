@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/gallery_updateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actionsheet_top_normal"
+        android:gravity="center"
+        android:text="相册还可以存放100张图片"
+        android:textColor="#8F8F8F"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/gallery_comeFromPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actionsheet_bottom_selector"
+        android:gravity="center"
+        android:text="来自手机相册"
+        android:textColor="#FD4A2E"
+        android:textSize="16sp" />
+        <TextView
+        android:id="@+id/gallery_makePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actionsheet_bottom_selector"
+        android:gravity="center"
+        android:text="拍照"
+        android:textColor="#FD4A2E"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/gallery_cancleUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/actionsheet_single_selector"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#037BFF"
+        android:textSize="16sp" />
+
+</LinearLayout>
+
+

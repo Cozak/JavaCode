@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="activity_config_bgalpha" format="float" type="dimen">0.3</item>
+
+    <dimen name="panel_headAndPanel">10.0dip</dimen>
+    <dimen name="set_imgWidth">50.0dip</dimen>
+    <dimen name="set_imgHeight">50.0dip</dimen>
+    <dimen name="myaccountTitleSize">20.0dip</dimen>
+    <dimen name="panel_topJSXtempLLWidth">155.0dip</dimen>
+    <dimen name="setappearancedeco">5dp</dimen>
+    <dimen name="setappearancebody">45dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="weatherwidth">100.0dip</dimen>
+    <dimen name="weatherheight">100.0dip</dimen>
+    <dimen name="weatherleft">12.0dip</dimen>
+    <dimen name="weathertop">100.0dip</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+    <dimen name="image_detail_pager_margin">80dp</dimen>
+
+    <!-- 登陆界面使用相对参数 -->
+    <!-- 爱心的使用参数 -->
+    <dimen name="heart_width">150dp</dimen>
+    <dimen name="heart_height">150dp</dimen>
+    <dimen name="heart_paddingTop">60dp</dimen>
+    <!-- 字的使用参数 -->
+    <dimen name="text_width">150dp</dimen>
+    <dimen name="text_height">70dp</dimen>
+    <dimen name="text_paddingTop">25dp</dimen>
+    <dimen name="text_paddingBottom">25dp</dimen>
+    <!-- 插入图片使用参数 -->
+    <dimen name="image_padding">1dp</dimen>
+    <!-- 邮箱使用参数 -->
+    <dimen name="ID_size">25dp</dimen>
+    <dimen name="ID_padding">15dp</dimen>
+    <dimen name="ID_padding_marginleft">15dp</dimen>
+    <!-- 邮箱输入框使用参数 -->
+    <dimen name="edit_email_width">150dp</dimen>
+    <dimen name="edit_email_height">60dp</dimen>
+    <dimen name="edit_email_size">25dp</dimen>
+    <dimen name="edit_email_marginRight">60dp</dimen>
+    <dimen name="edit_email_marginLeft">10dp</dimen>
+    <!-- 密码使用参数 -->
+    <dimen name="password_size">25dp</dimen>
+    <dimen name="password_padding">15dp</dimen>
+    <dimen name="password_marginTop">25dp</dimen>
+    <dimen name="password_marginleft">15dp</dimen>
+    <!-- 密码输入框使用参数 -->
+    <dimen name="edit_password_width">150dp</dimen>
+    <dimen name="edit_password_height">60dp</dimen>
+    <dimen name="edit_password_marginTop">15dp</dimen>
+    <dimen name="edit_password_marginRight">60dp</dimen>
+    <dimen name="edit_password_marginLeft">10dp</dimen>
+    <dimen name="edit_password_size">25dp</dimen>
+    <!-- 登陆按钮使用参数 -->
+    <dimen name="login_width">300dp</dimen>
+    <dimen name="login_height">75dp</dimen>
+    <dimen name="loginButton_marginTop">65dp</dimen>
+    <dimen name="loginButton_paddingTop">30dp</dimen>
+    <dimen name="loginButton_paddingBottom">3dp</dimen>
+    <dimen name="loginButton_paddingLeft">70dp</dimen>
+    <dimen name="loginButton_paddingRight">50dp</dimen>
+    <!-- 注册与忘记密码按钮使用参数 -->
+    <dimen name="Button_width">130dp</dimen>
+    <dimen name="Button_height">75dp</dimen>
+    <dimen name="button_textSize">28dp</dimen>
+    <dimen name="layout_marginTop">45dp</dimen>
+    <dimen name="register_marginLeft">20dp</dimen>
+    <dimen name="forget_marginRight">20dp</dimen>
+
+    
+	<!--双人动作使用参数 -->
+	<item name="couple_kiss_scale" format="float" type="dimen">0.95</item>
+	<item name="couple_abuse_scale" format="float" type="dimen">0.95</item>
+	<item name="couple_hug_scale" format="float" type="dimen">0.8</item>
+	<dimen name="couple_hug_margin_top">100dp</dimen>
+	<dimen name="couple_kiss_margin_top">20dp</dimen>
+    <dimen name="couple_abuse_margin_top">5dp</dimen>
+   
+</resources>

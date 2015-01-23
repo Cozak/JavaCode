@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+    
+ 
+       
+        <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:id="@+id/editErrorContent"
+                android:textSize="16sp"
+              />
+
+       "
+                 <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="恭喜检测到一个bug，请将程序出错信息截屏到想你体验群上，想你感激您的参与。"
+                android:id="@+id/txtErrorHint" 
+              />
+               
+                <Button android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" android:text="知道啦"
+                        android:id="@+id/btnCANCEL" ></Button>
+
+</LinearLayout>

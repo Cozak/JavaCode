@@ -1,0 +1,46 @@
+package com.dell.prototype.apm.model;
+
+import com.dell.prototype.apm.model.enduser.EndUserPerformance;
+import com.dell.prototype.apm.model.javaee.ApplicationServer;
+
+/**
+ * root node of APM prototype project data model
+ * 
+ */
+public class APMPrototype {
+
+	/**
+	 * end user performance data
+	 */
+	private EndUserPerformance enduser = new EndUserPerformance();
+
+	/**
+	 * application server performance data
+	 */
+	private ApplicationServer appServer = new ApplicationServer();
+
+	private static APMPrototype root = new APMPrototype();
+
+	private APMPrototype() {
+	}
+
+	public EndUserPerformance getEnduser() {
+		return enduser;
+	}
+
+	public void setEnduser(EndUserPerformance enduser) {
+		this.enduser = enduser;
+	}
+
+	public ApplicationServer getAppServer() {
+		return appServer;
+	}
+
+	public void setAppServer(ApplicationServer appServer) {
+		this.appServer = appServer;
+	}
+
+	public static APMPrototype getRoot() {
+		return root;
+	}
+}

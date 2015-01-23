@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/girl_eat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+    
+
+        <ImageView
+            android:id="@+id/EatGirl_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+     
+
+        <ImageView
+            android:id="@+id/EatGirl_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/eatgirl_eye" />
+
+    
+
+        <ImageView
+            android:id="@+id/EatGirl_mouth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/eatgirl_mouth" />
+
+        <ImageView
+            android:id="@+id/EatGirl_leftHand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/eatgirl_hand" />
+
+    </FrameLayout>

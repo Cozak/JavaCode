@@ -1,0 +1,40 @@
+package com.dell.prototype.apm.model;
+
+import com.google.gson.GsonBuilder;
+
+/**
+ * request time break down
+ */
+public class RequestTiming {
+
+    /**
+     * request timing name
+     */
+    protected String name = "servlet";
+    /**
+     * this step consumes time in ms
+     */
+    private long time;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public long getTime() {
+        return time;
+    }
+
+    public void setTime(long time) {
+        this.time = time;
+    }
+
+    @Override
+    public String toString() {
+        return new GsonBuilder().setPrettyPrinting().create().toJson(this).toString();
+    }
+
+}

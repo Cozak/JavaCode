@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MyRomateImageSee/assets/p_9.jpg&apos; to &apos;pp_9.jpg&apos;" description="Rename resource &apos;p_9.jpg&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="assets/p_9.jpg" name="pp_9.jpg" stamp="1422015944593" updateReferences="true"/>
+</session>

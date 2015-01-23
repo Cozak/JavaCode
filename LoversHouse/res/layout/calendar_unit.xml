@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/memoday_preview_background1" >
+    
+    <TextView
+        android:id="@+id/calendar_unit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:singleLine="true" />
+    
+    <TextView
+        android:id="@+id/calendar_unit_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:singleLine="true" />
+
+    <RelativeLayout 
+        android:id="@+id/calendar_unit_delete"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" >
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginRight="5sp"
+	        android:layout_marginTop="5sp"
+			android:background="#00FFFFFF"
+	        android:src="@drawable/memoday_removebtn" />
+     </RelativeLayout>
+     
+    <ImageButton
+        android:id="@+id/calendar_unit_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="5sp"
+		android:visibility="gone"
+		android:background="#00FFFFFF"
+        android:src="@drawable/memoday_star" />
+    
+</RelativeLayout>

@@ -1,0 +1,218 @@
+# view res/layout/album_image_pager.xml #generated:2
+# view res/layout/custom_facerelativelayout.xml #generated:75
+# view res/layout/guide.xml #generated:7
+# view res/layout/layout_faceview.xml #generated:10
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/activity_map.xml #generated:47
+-keep class com.amap.api.maps.MapView { <init>(...); }
+
+# view AndroidManifest.xml #generated:325
+-keep class com.baidu.android.pushservice.PushService { <init>(...); }
+
+# view AndroidManifest.xml #generated:301
+-keep class com.baidu.android.pushservice.PushServiceReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:311
+-keep class com.baidu.android.pushservice.RegistrationReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:288
+-keep class com.minius.baidupush.BaiduPushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:207
+-keep class com.minius.chat.imagedetail.ImagePagerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:231
+-keep class com.minius.error.ActErrorReport { <init>(...); }
+
+# view AndroidManifest.xml #generated:83
+-keep class com.minius.leadpage.ConfigOperateGuide { <init>(...); }
+
+# view AndroidManifest.xml #generated:221
+-keep class com.minius.leadpage.GuideActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:81
+-keep class com.minius.leadpage.OperateGuide { <init>(...); }
+
+# view AndroidManifest.xml #generated:226
+-keep class com.minius.leadpage.TranAnimation { <init>(...); }
+
+# view AndroidManifest.xml #generated:271
+-keep class com.minius.receiver.ConnectBroadCastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:251
+-keep class com.minius.receiver.SDBroadCastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:247
+-keep class com.minius.service.LockService { <init>(...); }
+
+# view AndroidManifest.xml #generated:236
+-keep class com.minius.service.MiniusService { <init>(...); }
+
+# view res/layout/progress_hud.xml #generated:23
+-keep class com.minius.ui.CircleProgress { <init>(...); }
+
+# view res/layout/image_detail_pager.xml #generated:7
+-keep class com.minius.ui.HackyViewPager { <init>(...); }
+
+# view res/layout/activity_config.xml #generated:7
+-keep class com.minius.ui.MyFrameLayout { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:277
+# view res/layout/activity_main.xml #generated:283
+# view res/layout/activity_main_brown.xml #generated:239
+# view res/layout/activity_main_brown.xml #generated:245
+# view res/layout/activity_main_powder.xml #generated:237
+# view res/layout/activity_main_powder.xml #generated:243
+-keep class com.minus.actionsystem.MenuItemView { <init>(...); }
+
+# view AndroidManifest.xml #generated:167
+-keep class com.minus.calendar.CalendarAddActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:172
+-keep class com.minus.calendar.CalendarDetail { <init>(...); }
+
+# view AndroidManifest.xml #generated:162
+-keep class com.minus.calendar.CalendarMainActivity { <init>(...); }
+
+# view res/layout/activity_cropheadpic.xml #generated:22
+-keep class com.minus.cropimage.CaptureView { <init>(...); }
+
+# view AndroidManifest.xml #generated:203
+-keep class com.minus.cropimage.CropActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:149
+-keep class com.minus.diary.DiaryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:155
+-keep class com.minus.diary.EditDiaryActivity { <init>(...); }
+
+# view res/layout/item_pager_image.xml #generated:7
+-keep class com.minus.gallery.FullImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:191
+-keep class com.minus.gallery.GalleryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:197
+-keep class com.minus.gallery.GalleryImagePagerActivity { <init>(...); }
+
+# view res/layout/albumpgbar.xml #generated:31
+-keep class com.minus.gallery.NumberProgressBar { <init>(...); }
+
+# view res/layout/gallary_view.xml #generated:98
+-keep class com.minus.gallery.QImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:86
+-keep class com.minus.lovershouse.ChatActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:187
+-keep class com.minus.lovershouse.ChatPicDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.minus.lovershouse.CoupleActionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.minus.lovershouse.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:68
+-keep class com.minus.lovershouse.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:98
+-keep class com.minus.lovershouse.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:140
+-keep class com.minus.lovershouse.SetAppearanceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class com.minus.lovershouse.WelcomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:183
+-keep class com.minus.lovershouse.bitmap.ui.ImageDetailActivity { <init>(...); }
+
+# view res/layout/custom_facerelativelayout.xml #generated:2
+-keep class com.minus.lovershouse.face.FaceRelativeLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:116
+-keep class com.minus.lovershouse.setting.AboutusActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class com.minus.lovershouse.setting.BasicSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:103
+-keep class com.minus.lovershouse.setting.ConfigActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:132
+-keep class com.minus.lovershouse.setting.CreateGesturePasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:120
+-keep class com.minus.lovershouse.setting.HelpActivity { <init>(...); }
+
+# view res/layout/lock_graph_view.xml #generated:20
+-keep class com.minus.lovershouse.setting.LockPatternView { <init>(...); }
+
+# view AndroidManifest.xml #generated:112
+-keep class com.minus.lovershouse.setting.PasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:124
+-keep class com.minus.lovershouse.setting.PrivacyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:128
+-keep class com.minus.lovershouse.setting.RankActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:136
+-keep class com.minus.lovershouse.setting.UnlockGesturePasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class com.minus.lovershouse.singleton.GlobalApplication { <init>(...); }
+
+# view res/layout/chat_list_fragment.xml #generated:3
+# view res/layout/diary_view.xml #generated:44
+-keep class com.minus.lovershouse.util.RTPullListView { <init>(...); }
+
+# view res/layout/activity_login.xml #generated:2
+# view res/layout/activity_register.xml #generated:2
+-keep class com.minus.lovershouse.util.ResizeLayout { <init>(...); }
+
+# view res/layout/layout_map_icon.xml #generated:19
+# view res/layout/layout_map_icon2.xml #generated:19
+-keep class com.minus.lovershouse.util.RoundedImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:177
+-keep class com.minus.map.MapActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:144
+-keep class com.minus.weather.WeatherActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:216
+-keep class com.umeng.fb.ContactActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:212
+-keep class com.umeng.fb.ConversationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:345
+-keep class com.umeng.message.NotificationProxyBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:350
+-keep class com.umeng.message.RegistrationReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:361
+-keep class com.umeng.message.UmengBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:398
+-keep class com.umeng.message.UmengDownloadResourceService { <init>(...); }
+
+# view AndroidManifest.xml #generated:396
+-keep class com.umeng.message.UmengIntentService { <init>(...); }
+
+# view AndroidManifest.xml #generated:373
+-keep class com.umeng.message.UmengService { <init>(...); }
+
+# view AndroidManifest.xml #generated:340
+-keep class com.umeng.update.UpdateDialogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:336
+-keep class com.umeng.update.net.DownloadingService { <init>(...); }
+
+# view AndroidManifest.xml #generated:388
+-keep class org.android.agoo.service.ElectionService { <init>(...); }
+

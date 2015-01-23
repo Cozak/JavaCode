@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndrordClient</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="FlyName">Androne-Flyer</string>
+    <string name="title_activity_socket_bulid_up">SocketBuildUp</string>
+    <string name="socket_title">Net Connection</string>
+    <string name="socket_but">Submit</string>
+    <string name="socket_cancel">Cancel</string>
+    <string name="tip_choose_mode">Select Mode First</string>
+    
+    <string name="Str_watchModelOn">Watch On</string>
+    <string name="Str_watchModelOff">Watch Off</string>
+	<string name="Str_takoff">Take Off</string>
+    <string name="Str_land">Land</string>
+    <string name="Str_landing">Landing</string>
+    <string name="Str_Orderfailure">Oops...Order Unknown</string>
+    <string name="Str_Connect">Connect</string>
+    <string name="Str_Need_Connection">Client Offline</string>
+</resources>

@@ -1,0 +1,282 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background_brown"
+    android:gravity="top"
+    tools:context=".setting.BasicSettingActivity" >
+
+<!--     <ImageButton -->
+<!--         android:id="@+id/configBtn" -->
+<!--         android:layout_width="@dimen/configBtn_width" -->
+<!--         android:layout_height="@dimen/configBtn_height" -->
+<!--         android:layout_alignParentLeft="true" -->
+<!--         android:layout_alignParentTop="true" -->
+<!--         android:background="@drawable/main_menu" /> -->
+    
+<!--      <ImageButton -->
+<!--         android:id="@+id/chatBtn" -->
+<!--         android:layout_width="@dimen/chatBtn_width" -->
+<!--         android:layout_height="@dimen/chatBtn_height" -->
+<!--         android:layout_alignParentRight="true" -->
+<!--         android:layout_alignParentTop="true" -->
+<!--         android:background="@drawable/main_chat" /> -->
+    
+	<ImageView
+        android:id="@+id/configBtn"
+         android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/main_menu_selector" />
+
+	
+    <ImageButton
+        android:id="@+id/guidetomatchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/guidetomatchBtn_height"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/configBtn"
+        android:visibility="invisible" />
+    
+	<ImageView
+        android:id="@+id/chatBtn"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/main_chat_selector" />
+   
+    <ImageView
+        android:id="@+id/weatherBtn"
+        android:layout_width="@dimen/weatherBtn_width"
+        android:layout_height="@dimen/weatherBtn_height"
+        android:layout_marginLeft="@dimen/weather_marginLeft"
+        android:layout_marginTop="@dimen/weather_marginTop"
+        android:scaleType="fitXY"
+        android:src="@drawable/main_sun" />
+
+    <Button
+        android:id="@+id/dailyBtn"
+        android:layout_width="@dimen/dailyBtn_width"
+        android:layout_height="@dimen/dailyBtn_height"
+        android:layout_marginLeft="@dimen/dailyBtn_marginLeft"
+        android:layout_marginTop="@dimen/daily_marginTop"
+        android:background="@drawable/maindiarybutton"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/annBtn"
+        android:layout_width="@dimen/annBtn_width"
+        android:layout_height="@dimen/annBtn_height"
+        android:layout_marginLeft="@dimen/ann_marginLeft"
+        android:layout_marginTop="@dimen/ann_marginTop"
+        android:background="@drawable/maincalendarbutton2"
+        android:text="纪念日"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/lampBtn"
+        android:layout_width="@dimen/lampBtn_width"
+        android:layout_height="@dimen/lampBtn_height"
+        android:layout_marginLeft="@dimen/lamp_marginLeft"
+        android:layout_marginTop="@dimen/lamp_marginTop"
+        android:background="@drawable/brownlampoff"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/pictureBtn"
+        android:layout_width="@dimen/pictureBtn_width"
+        android:layout_height="@dimen/pictureBtn_height"
+        android:layout_marginRight="@dimen/picture_marginRight"
+        android:layout_marginTop="@dimen/picture_marginTop"
+        android:background="@drawable/a_0003_brownalbum"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/mapBtn"
+        android:layout_width="@dimen/mapBtn_width"
+        android:layout_height="@dimen/mapBtn_height"
+        android:layout_marginLeft="@dimen/map_marginLeft"
+        android:layout_marginTop="@dimen/map_marginTop"
+        android:background="@drawable/mainmapbutton2"
+        android:visibility="visible" />
+
+    
+
+    <RelativeLayout
+        android:id="@+id/middleflag"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/stand_boy_marginBottom"
+        android:layout_toLeftOf="@+id/middleflag"
+        android:scaleX="@dimen/stand_boy_scale"
+        android:scaleY="@dimen/stand_boy_scale" >
+
+        <include
+            android:id="@+id/stand_boy_view"
+            layout="@layout/single_boy_stand"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/stand_girl_marginBottom"
+        android:layout_toRightOf="@+id/middleflag"
+        android:scaleX="@dimen/stand_girl_scale"
+        android:scaleY="@dimen/stand_girl_scale" >
+
+        <include
+            android:id="@+id/stand_girl_view"
+            layout="@layout/single_girl_stand"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" >
+
+        <include
+            layout="@layout/single_sleep"
+             />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/MyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/person_portrait_marginBottom"
+        android:layout_toLeftOf="@+id/middleflag"
+        android:scaleX="@dimen/person_portrait_scale"
+        android:scaleY="@dimen/person_portrait_scale" >
+
+        <include
+            android:id="@+id/personPortrait"
+            layout="@layout/person_portrait"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/GirlView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/girl_portrait_marginBottom"
+        android:layout_toRightOf="@+id/middleflag"
+        android:scaleX="@dimen/girl_portrait_scale"
+        android:scaleY="@dimen/girl_portrait_scale" >
+
+        <include
+            android:id="@+id/girlPortrait"
+            layout="@layout/girl_portrait"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/girl_sit_marginBottom"
+        android:layout_toRightOf="@+id/middleflag"
+        android:scaleX="@dimen/girl_sit_scale"
+        android:scaleY="@dimen/girl_sit_scale" >
+
+<!--         <include -->
+<!--             android:id="@+id/girl_sit_view" -->
+<!--             layout="@layout/single_girl_sit" -->
+<!--             android:visibility="visible" /> -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/boy_sit_marginBottom"
+        android:layout_toLeftOf="@+id/middleflag"
+        android:scaleX="@dimen/boy_sit_scale"
+        android:scaleY="@dimen/boy_sit_scale" >
+
+        <include
+            android:id="@+id/boy_sit_view"
+            layout="@layout/single_boy_sit"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/girlChatbubblePos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/GirlView"
+        android:layout_toLeftOf="@id/GirlView"
+        android:background="@drawable/actiongirlchattoright"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/boyChatbubblePos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/MyView"
+        android:layout_toRightOf="@id/MyView"
+        android:background="@drawable/actionboychattoleft"
+        android:visibility="gone" />
+
+    <com.minus.actionsystem.MenuItemView
+        android:id="@+id/boyMenuItemView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <com.minus.actionsystem.MenuItemView
+        android:id="@+id/girlboyMenuItemView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/coupleAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:id="@+id/couple_action_hug"
+            layout="@layout/couple_person_hug"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/couple_action_kiss"
+            layout="@layout/couple_person_kiss"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/couple_action_abuse"
+            layout="@layout/couple_person_abuse"
+            android:visibility="gone" />
+
+      <!--   <include
+            android:id="@+id/boy_action_pinchedface_and_petted"
+            layout="@layout/boy_pinchedface_and_petted"
+            android:visibility="gone" />
+ -->
+      <!--   <include
+            android:id="@+id/girl_action_pinchedface_and_petted"
+            layout="@layout/girl_pinchedface_and_petted"
+            android:visibility="gone" /> -->
+    </RelativeLayout>
+
+</RelativeLayout>

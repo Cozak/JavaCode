@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">To_Do_List</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="addItemHint">New To Do Item</string>
+    <string name="addItemContentDescription">New To Do A Item</string>
+
+</resources>

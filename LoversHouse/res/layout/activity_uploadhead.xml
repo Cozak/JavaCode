@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/_0015_navigation_bars"
+    
+    >  
+    <RelativeLayout 
+        android:id="@+id/rl_layout"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:gravity="center_vertical"  >
+
+  			<ImageButton
+  			    android:id="@+id/btn_rigisterback"
+  			    android:layout_width="wrap_content"
+  			    android:layout_height="wrap_content"
+  			    android:layout_alignParentLeft="true"
+  			    android:layout_alignParentTop="true"
+  			    android:background="@drawable/_0000_back" />
+  			<ImageButton
+  			    android:id="@+id/btn_regnext"
+  			    android:layout_width="wrap_content"
+  			    android:layout_height="wrap_content"
+  			    android:layout_alignParentRight="true"
+  			    android:layout_alignParentTop="true"
+  			    android:background="@drawable/_0019_ok" />
+      		      
+		</RelativeLayout>
+		
+    <ImageButton
+     android:id="@+id/image_index"
+     android:layout_below="@id/rl_layout"
+     android:layout_centerHorizontal="true"
+     android:src="@drawable/_0014_photo"
+     android:layout_width="wrap_content"  
+     android:layout_height="wrap_content"
+     android:layout_marginTop="32dp"
+     ></ImageButton>
+    <ImageButton
+     android:id="@+id/image_girl"
+     android:layout_below="@id/image_index"
+     android:layout_toRightOf="@id/image_index"
+     android:src="@drawable/_0012_girl_mo_ren"
+     android:layout_width="wrap_content"  
+     android:layout_height="wrap_content"
+     ></ImageButton>
+
+    <ImageButton
+        android:id="@+id/image_boy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_below="@+id/image_index"
+         android:layout_toRightOf="@id/image_index"
+        android:src="@drawable/_0010_boy_mo_ren" 
+        android:layout_marginLeft="40dp"/>
+    <EditText 
+        android:id="@+id/nicknameEt"
+        android:hint="  昵称"
+        android:background="@drawable/_0006_enter_your_name"
+        android:layout_below="@+id/image_boy"
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scrollHorizontally="true"   
+        android:selectAllOnFocus="true"   
+        />
+      <EditText 
+        android:id="@+id/emailEt"
+        android:hint="  邮箱"
+        android:background="@drawable/_0007_enter_your_email"
+        android:layout_below="@+id/nicknameEt"
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scrollHorizontally="true"   
+        android:selectAllOnFocus="true"   
+        />
+      <ImageView 
+          android:id="@+id/emailCheckIV"
+          android:src="@drawable/_0019_ok"
+           android:layout_width="wrap_content"  
+           android:layout_height="wrap_content"
+           android:layout_alignRight="@id/emailEt"
+           android:layout_below="@+id/nicknameEt"
+           android:layout_marginLeft="2dp"
+           android:visibility="gone"
+          />"
+      <EditText 
+        android:id="@+id/passEt"
+        android:hint="  密码"
+        android:background="@drawable/_0008_enter_your_password"
+        android:layout_below="@+id/emailEt"
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scrollHorizontally="true"   
+        android:selectAllOnFocus="true"   
+       android:inputType="textPassword"
+        />
+       <EditText 
+        android:id="@+id/passagainEt"
+        android:hint="  再次输入密码"
+        android:background="@drawable/_0009_enter_your_password_again"
+        android:layout_below="@+id/passEt"
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scrollHorizontally="true"   
+        android:selectAllOnFocus="true"   
+       android:inputType="textPassword"
+        />
+       <TextView
+           android:id="@+id/stateTv"
+           android:textColor="#ffb6c1"
+           android:layout_below="@id/passagainEt"
+           android:layout_marginTop="5dp"
+           android:text="dfd"
+           android:textStyle="bold" 
+           android:layout_width="wrap_content"  
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:visibility="gone"
+           
+           />
+     
+
+	</RelativeLayout>
+

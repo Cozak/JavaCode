@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/memoday_first_item_background" >
+    
+    <TextView
+        android:id="@+id/calendar_first_item_text01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textColor="#f96282"
+        android:text="我们在一起" />
+
+    <TextView
+        android:id="@+id/calendar_first_item_dayPassed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendar_first_item_text01"
+        android:layout_centerHorizontal="true"
+        android:textSize="61sp"
+        android:textColor="#f96282"
+        android:text="100" />
+    
+    <TextView
+        android:id="@+id/calendar_first_item_text02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/calendar_first_item_dayPassed"
+        android:layout_toRightOf="@id/calendar_first_item_dayPassed"
+        android:layout_marginRight="30dp"
+        android:textSize="20sp"
+        android:textColor="#f96282"
+        android:text="天" />
+    
+    <TextView
+        android:id="@+id/calendar_first_item_text03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="162dp"
+        android:layout_marginLeft="70dp"
+        android:textSize="12sp"
+        android:textColor="#cac7c7"
+        android:text="起始日" />
+    
+    <TextView
+        android:id="@+id/calendar_first_item_memodate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/calendar_first_item_text03"
+        android:layout_alignBottom="@id/calendar_first_item_text03"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:textColor="#cac7c7"
+        android:text="2014-06-01" />
+    
+</RelativeLayout>

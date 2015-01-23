@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   
+    <ImageView 
+
+        android:id="@+id/boy_pinchedface_main"
+        android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:scaleType="fitEnd"
+        
+        />
+   
+
+    <ImageView
+        android:id="@+id/boy_pinchedface_eye"
+         android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+       android:scaleType="fitEnd"
+        android:src="@anim/boy_pinchedface_eye"
+        
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/boy_petted_hand"
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:scaleType="fitEnd"
+        android:src="@anim/petted_hand"
+        
+        android:visibility="gone"/>
+
+</FrameLayout>

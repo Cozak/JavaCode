@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   <FrameLayout
+				android:id="@+id/help_top"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pink"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/help_navigation" />
+
+                <ImageView
+                    android:id="@+id/help_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/weather_back_marginLeft"
+                    android:background="@drawable/back_button_selector"
+                    android:clickable="true"
+                    android:scaleType="fitCenter" />
+            </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/help_body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/help_top" >
+
+        <ImageView
+            android:id="@+id/help_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/help_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

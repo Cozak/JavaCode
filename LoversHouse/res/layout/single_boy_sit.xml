@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/boy_eat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/EatBoy_chair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boy_eat_chair" />
+
+        <ImageView
+            android:id="@+id/EatBoy_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boy_eat_body" />
+
+        <ImageView
+            android:id="@+id/EatBoy_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boy_eat_face" />
+
+        <ImageView
+            android:id="@+id/EatBoy_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/eatboy_eye" />
+
+        <ImageView
+            android:id="@+id/EatBoy_mouth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/eatboy_mouth" />
+
+        <ImageView
+            android:id="@+id/EatBoy_leftHand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/eatboy_hand" />
+
+        <ImageView
+            android:id="@+id/EatBoy_cloth01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boy_eatcloth01"
+            android:visibility="visible" />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/EatBoy_cloth02" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_eatcloth02" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/EatBoy_cloth03" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_eatcloth03" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/EatBoy_cloth04" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_eatcloth04" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/EatBoy_cloth05" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_eatcloth05" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/EatBoy_cloth06" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_eatcloth06" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/EatBoy_cloth07" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_eatcloth07" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/EatBoy_cloth08" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_eatcloth08" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/EatBoy_cloth09" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_eatcloth09" -->
+        <!-- android:visibility="gone"  /> -->
+
+        <ImageView
+            android:id="@+id/EatBoy_hair01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boy_eat_hair01" />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/EatBoy_hair02" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_eat_hair01" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/EatBoy_hair03" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_eat_hair02" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/EatBoy_hair04" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_eat_hair03" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/EatBoy_hair05" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_eat_hair04" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/EatBoy_hair06" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_eat_hair05" -->
+        <!-- android:visibility="gone" /> -->
+
+        <ImageView
+            android:id="@+id/Boy_eatDeco01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boy_eat_decoration01" />
+
+        <ImageView
+            android:id="@+id/Boy_eat_right_hand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boy_eat_right_hand" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/boy_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/ReadBoy_chair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boy_learn_chair" />
+
+        <ImageView
+            android:id="@+id/ReadBoy_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boy_learn_body" />
+
+        <ImageView
+            android:id="@+id/ReadBoy_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boy_learn_face" />
+
+        <ImageView
+            android:id="@+id/ReadBoy_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/readboy_eye" />
+
+        <ImageView
+            android:id="@+id/Boy_readCloth01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boy_learn_clothes01"
+            android:visibility="visible" />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Boy_readCloth02" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_learn_clothes02" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Boy_readCloth03" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_learn_clothes03" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Boy_readCloth04" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_learn_clothes04" -->
+        <!-- android:visibility="visible" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Boy_readCloth05" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_learn_clothes05" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Boy_readCloth06" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_learn_clothes06" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Boy_readCloth07" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_learn_clothes07" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Boy_readCloth08" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_learn_clothes08" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Boy_readCloth09" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_learn_clothes09" -->
+        <!-- android:visibility="gone" /> -->
+
+        <ImageView
+            android:id="@+id/ReadBoy_hair01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boy_learn_hair01" />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/ReadBoy_hair02" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_learn_hair01" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/ReadBoy_hair03" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_learn_hair02" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/ReadBoy_hair04" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_learn_hair03" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/ReadBoy_hair05" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_learn_hair04" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/ReadBoy_hair06" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_learn_hair05" -->
+        <!-- android:visibility="gone" /> -->
+
+        <ImageView
+            android:id="@+id/Boy_readDeco01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boy_learn_decoration01" />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Boy_readDeco02" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_learn_decoration02" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Boy_readDeco03" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_learn_decoration03" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Boy_readDeco04" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_learn_decoration04" -->
+        <!-- android:visibility="gone" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/Boy_readDeco05" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@drawable/boy_learn_decoration05" -->
+        <!-- android:visibility="gone" /> -->
+
+        <ImageView
+            android:id="@+id/ReadBoy_Book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@anim/readboy_hand" />
+    </FrameLayout>
+
+</RelativeLayout>

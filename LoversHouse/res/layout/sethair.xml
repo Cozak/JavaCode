@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myhairLL"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/signup_2_hair_dropdownbox"
+    android:orientation="vertical" >
+
+    <!-- TODO  margin dimen , space dimen -->
+
+    <GridView
+        android:id="@+id/hairgridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:horizontalSpacing="4dp"
+        android:numColumns="3"
+        android:scrollbarStyle="outsideInset"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="4dp" />
+
+    <!--
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/hairAImgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1.0"
+            android:background="@drawable/b21" />
+
+        <ImageButton
+            android:id="@+id/hairBImgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1.0"
+            android:background="@drawable/b22" />
+
+        <ImageButton
+            android:id="@+id/hairCImgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1.0"
+            android:background="@drawable/b23" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/decoDImgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1.0"
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/decoEImgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/decoDImgBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1.0"
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/decoFImgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1.0"
+            android:background="@null" />
+    </RelativeLayout>
+    -->
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.example.andrordclient.KernelActivity" 
+    android:id="@+id/main_layout">
+    
+    <!-- Title-Mode -->
+	<TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+		<TableRow>
+		   
+		    <TextView
+			    android:id="@+id/textView1"
+		        android:layout_width="0dp"
+		        android:layout_weight="75"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:textSize="20sp"
+		        android:text="@string/FlyName" />
+		    
+		    <Button
+	        android:id="@+id/but_mode"
+	        android:layout_width="0dp"
+			android:layout_weight="25"	        
+	        android:layout_height="wrap_content"
+	        android:text="Mode" />
+		</TableRow>
+	</TableLayout>
+	
+	<!-- Map-Vedio-StateList -->
+	<TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+		<TableRow>
+		    <TextView
+		        android:layout_weight="25"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:text="This is the Google Map"/>
+		    <TableLayout
+		        android:layout_width="0dp"
+		        android:layout_weight="75"
+		        android:layout_height="wrap_content">
+				<VideoView
+		        android:id="@+id/video_screen"
+		        android:layout_width="wrap_content"
+		        android:layout_height="180dp"/>
+			    <TextView
+		        android:id="@+id/State_feedback"
+		        android:layout_width="wrap_content"
+		        android:layout_height="40dp"
+		        android:text="Hello!" />        
+		    </TableLayout>
+		  	
+		</TableRow>
+	</TableLayout>
+	
+	<!-- CL-Front-UP -->
+	<!-- CL-Left-Right-Hov -->
+	<!-- CL-Back-Down -->
+	<!-- Mode Switcher -->
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+   		<TableRow>
+   		    <Button
+	        android:id="@+id/but_front"
+	        android:layout_width="0dp"
+	        android:layout_weight="75"
+	        android:layout_height="wrap_content"
+	        android:text="Front" />
+   		    <Button
+	        android:id="@+id/but_up"
+	        android:layout_width="0dp"
+	        android:layout_weight="25"
+	        android:layout_height="wrap_content"
+	        android:text="Up" />
+   		</TableRow>
+   		<TableRow>
+   		    <Button
+	        android:id="@+id/but_left"
+	        android:layout_width="0dp"
+	        android:layout_weight="37.5"
+	        android:layout_height="wrap_content"
+	        android:text="Left" />
+   		    <Button
+	        android:id="@+id/but_right"
+	        android:layout_width="0dp"
+	        android:layout_weight="37.5"
+	        android:layout_height="wrap_content"
+	        android:text="Right" />
+			<Button
+	        android:id="@+id/but_emergency_stop"
+	        android:layout_width="0dp"
+	        android:layout_weight="25"
+	        android:layout_height="wrap_content"
+	        android:text="Hov" />   		    
+   		</TableRow>
+   		<TableRow>
+   		    <Button
+	        android:id="@+id/but_back"
+	        android:layout_width="0dp"
+	        android:layout_weight="75"
+	        android:layout_height="wrap_content"
+	        android:text="Back" />
+   		    <Button
+	        android:id="@+id/but_down"
+	        android:layout_width="0dp"
+	        android:layout_weight="25"
+	        android:layout_height="wrap_content"
+	        android:text="Down" />
+   		</TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom" >
+
+        <Button
+        android:id="@+id/but_Switcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    </TableLayout>
+
+</LinearLayout>

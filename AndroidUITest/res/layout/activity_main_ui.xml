@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cozak.androiduitest.MainUIActivity" >
+
+    <TextView
+        android:id="@+id/ui_text_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50" />
+
+    <SeekBar
+        android:id="@+id/ui_seekbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="100"
+        android:thumb="@drawable/ic_launcher" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ui_seekbar"
+        android:layout_below="@+id/ui_seekbar"
+        android:layout_marginTop="14dp" >
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stringjhgjhgjhgdfgfdfgdgdgdfgdfffghfhgfhgjhghkhlljllkjiyytaewqwersresersrra1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stringjhgjhgjhgdfgfdfgdgdgdfgdfffghfhgfhgjhghkhlljllkjiyytaewqwersresersrra2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stringjhgjhgjhgdfgfdfgdgdgdfgdfffghfhgfhgjhghkhlljllkjiyytaewqwersresersrra3" />
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/scrollView1"
+        android:layout_below="@+id/scrollView1"
+        android:layout_marginTop="82dp" >
+    </ListView>
+
+</RelativeLayout>

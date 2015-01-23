@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <FrameLayout
+        android:id="@+id/basicsetting_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/basicsetting_navigation" />
+
+        <ImageView
+            android:id="@+id/basicsetting_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/weather_back_marginLeft"
+            android:background="@drawable/back_button_selector"
+            android:clickable="true"
+            android:scaleType="fitCenter" />
+    </FrameLayout>
+
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/basicsetting_top">
+    <RelativeLayout
+        android:id="@+id/basicsetting_body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+
+        <ImageView
+            android:id="@+id/basicsetting_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/basicsetting_message_choice"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/setting_message" />
+
+        <FrameLayout
+            android:id="@+id/basicsetting_message_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/basicsetting_message"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/basicsetting_background1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/basicsetting_voicevib" />
+
+            <RelativeLayout
+                android:id="@+id/choice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="10dp" >
+
+                <ToggleButton
+                    android:id="@+id/voice"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/toggle_selector"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <ToggleButton
+                    android:id="@+id/viberate"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/voice"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/toggle_selector"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+        </FrameLayout>
+        <!-- 隐私保护 -->
+
+        <ImageView
+            android:id="@+id/basicsetting_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/basicsetting_message_choice"
+            android:layout_below="@id/basicsetting_message_choice"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/setting_privacy" />
+
+        <LinearLayout
+            android:id="@+id/basicsetting_privacy_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="165dp"
+            android:layout_alignLeft="@+id/basicsetting_message_choice"
+            android:layout_alignRight="@+id/basicsetting_message_choice"
+            android:layout_below="@+id/basicsetting_privacy"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/basicsetting_privacy"
+            android:orientation="vertical" >
+
+            <!-- 数字 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" >
+
+                <ToggleButton
+                    android:id="@+id/num"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/toggle_selector"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+            <!-- 图案 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" >
+
+                <ToggleButton
+                    android:id="@+id/graph"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/toggle_selector"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+            <!-- 更改密码 -->
+
+            <RelativeLayout
+                android:id="@+id/modifyPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ToggleButton
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/toggle_selector"
+                    android:textOff=""
+                    android:textOn=""
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+	</ScrollView>
+</RelativeLayout>

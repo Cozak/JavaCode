@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.minus.lovershouse.face.FaceRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FaceRelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/_0020_bar" >
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/chat_picture_button"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/iv_face"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true" 
+            android:layout_toRightOf="@+id/iv_pic"
+            android:scaleType="fitCenter"
+            android:src="@drawable/chat_face_button" />
+
+        <ImageView
+            android:id="@+id/iv_send"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/chat_voice_button"
+            android:tag="0" />
+
+        <EditText
+            android:id="@+id/et_sendmessage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/iv_send"
+            android:layout_toRightOf="@id/iv_face"
+            android:background="@drawable/login_edit_normal"
+            android:imeOptions="actionSend|flagNoEnterAction"
+            android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_facechoose"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:layout_below="@id/rl_input"
+        android:layout_marginTop="1dp"
+        android:background="#f6f5f5"
+        android:visibility="gone" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_contains"
+            android:layout_width="match_parent"
+            android:layout_height="120dip" >
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/custom_faceRelativeLayout_progress"
+            android:layout_width="match_parent"
+            android:layout_height="25dip"
+            android:layout_below="@id/vp_contains"
+            android:layout_marginBottom="5dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/iv_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/custom_faceRelativeLayout_deleteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/face_del_ico_dafeult"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/custom_faceRelativeLayout_emoji_emoticon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/custom_faceRelativeLayout_progress"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/custom_faceRelativeLayout_selectEmoji"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitEnd"
+                android:src="@drawable/face_emoji_selected" />
+
+            <ImageView
+                android:id="@+id/custom_faceRelativeLayout_selectEmoticon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:scaleType="fitEnd"
+                android:src="@drawable/face_emoticon_unselected" />
+
+            <TextView
+                android:id="@+id/emotionspace"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/emotionSend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:scaleType="fitEnd"
+                android:src="@drawable/chat_send" />
+            <!-- <Button -->
+            <!-- android:layout_marginLeft="4dp" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:id="@+id/emotionSend" -->
+            <!-- android:gravity="center" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:text="发送" -->
+            <!-- android:textColor="@color/btntextcolor" -->
+            <!-- android:background="@drawable/left_btn_select"/> -->
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</com.minus.lovershouse.face.FaceRelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <!-- 定义第一个表格布局，指定第2列允许收缩，第3列允许拉伸 -->
+
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="0,2"
+        android:stretchColumns="1" >
+
+        <Button android:id="@+id/ok1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single Line Button"/>
+        <TableRow>
+            <!-- 在该表格行添加三个按钮 -->
+            <Button android:id="@+id/ok2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Common Button"/>
+            <Button android:id="@+id/ok3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shrink Button"/>
+            <Button android:id="@+id/ok4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stretch Button"/>
+        </TableRow>
+    </TableLayout>
+    <!-- 定义第二个表格布局，指定第二列和第三列可以被拉伸 -->
+    <TableLayout android:id="@+id/TableLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:collapseColumns="1"
+        >
+        <Button android:id="@+id/ok11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single Line Button"/>
+        <TableRow>
+            <!-- 在该表格行添加三个按钮 -->
+            <Button android:id="@+id/ok12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Common Button0"/>
+            <Button android:id="@+id/ok13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Common Button1"/>
+            <Button android:id="@+id/ok14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Common Button2"/>
+        </TableRow>
+    </TableLayout>
+    <!-- 定义第三个表格布局，指定第二列和第三列可以被拉伸 -->
+    <TableLayout android:id="@+id/TableLayout03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="1"
+        android:stretchColumns="0,2"
+        >
+        <Button android:id="@+id/ok21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single Line Button"/>
+        <TableRow>
+            <!-- 在该表格行添加三个按钮 -->
+            <Button android:id="@+id/ok22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Common Button"/>
+            <Button android:id="@+id/ok23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shrink Button"/>
+            <Button android:id="@+id/ok24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stretch Button"/>
+        </TableRow>
+        <TableRow>
+            <!-- 为该表格行添加两个按钮 -->
+            <Button android:id="@+id/ok30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Common Button A"/>
+            <Button android:id="@+id/ok31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Common Button B"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

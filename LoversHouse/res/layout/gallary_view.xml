@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/album_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+<!--     <RelativeLayout -->
+<!--         android:id="@+id/galleryTop" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="@dimen/reg_top_height" -->
+<!--         android:background="@drawable/gallery_top" > -->
+
+<!--         <ImageButton -->
+<!--             android:id="@+id/galleryBack" -->
+<!--             android:layout_width="@dimen/weather_back_width" -->
+<!--             android:layout_height="@dimen/weather_back_height" -->
+<!--             android:layout_marginLeft="@dimen/weather_back_marginLeft" -->
+<!-- 			android:layout_centerVertical="true" -->
+<!--             android:background="@drawable/back_button_selector" /> -->
+
+<!--         <ImageButton -->
+<!--             android:id="@+id/galleryRightBtn" -->
+<!--             android:layout_width="@dimen/weather_back_width" -->
+<!--             android:layout_height="@dimen/weather_back_height" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_marginRight="@dimen/weather_back_marginLeft" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:background="@drawable/add_button_selector" /> -->
+<!--     </RelativeLayout> -->
+
+	  <FrameLayout
+        android:id="@+id/galleryTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gallery_top" />
+
+        <ImageView
+            android:id="@+id/galleryBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="@dimen/weather_back_marginLeft"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_button_selector" />
+
+        <ImageView
+            android:id="@+id/galleryRightBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/weather_back_marginLeft"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/add_button_selector" />
+    </FrameLayout>
+    
+    <ImageView
+        android:id="@+id/nopicIV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/galleryTop"
+        android:background="@drawable/album_nophoto_40h2"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/galleryfl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp" >
+
+        <Gallery
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:spacing="3pt"
+            android:unselectedAlpha="0.3" />
+
+        <ImageView
+            android:id="@+id/selback"
+            android:layout_width="65dip"
+            android:layout_height="85dip"
+            android:layout_gravity="center"
+            android:background="@drawable/albumframescrollimg" />
+    </FrameLayout>
+
+    <com.minus.gallery.QImageView
+        android:id="@+id/pager"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="500dp"
+        android:maxWidth="800dp"
+        android:layout_above="@id/galleryfl"
+        android:layout_below="@id/galleryTop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

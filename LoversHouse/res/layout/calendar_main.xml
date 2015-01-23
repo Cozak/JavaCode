@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calendar_main_frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" >
+
+        <FrameLayout
+            android:id="@+id/calendar_main_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pink"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/memoday_navigationbar_ios6" />
+
+            <ImageView
+                android:id="@+id/calendar_main_backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="@dimen/weather_back_marginLeft"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back_button_selector" />
+
+            <ImageView
+                android:id="@+id/calendar_main_addBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="@dimen/weather_back_marginLeft"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add_button_selector" />
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calendar_main_top"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/calendar_main_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

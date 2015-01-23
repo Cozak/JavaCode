@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/_0002_customalert">
+
+   
+
+    <!-- Line 1 -->
+
+    
+    <TextView
+        android:id="@+id/textView_title_mydialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="上传头像"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="22dp" >
+    </TextView>
+
+    <!-- Line 2 -->
+
+    <Button
+        android:id="@+id/cancelbtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView_title_mydialog"
+        android:text="取消"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+       />
+       <!-- Line 3 -->
+     <Button
+        android:id="@+id/choosebtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cancelbtn"
+        android:text="选择已有的"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+    
+    <!-- Line 4 -->
+    <Button
+        android:id="@+id/takepicbtn"
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choosebtn"
+        android:text="拍照"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

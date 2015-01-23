@@ -1,0 +1,22 @@
+package com.dell.prototype.apm.instrumentation;
+
+import java.lang.instrument.ClassFileTransformer;
+import java.lang.instrument.Instrumentation;
+import java.util.logging.Logger;
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: lliu2
+ * Date: 9/1/14
+ * Time: 2:15 PM
+ * To change this template use File | Settings | File Templates.
+ */
+public class Premain {
+
+    public static void premain(String agentArgs, Instrumentation inst) {
+        Logger.getLogger("com.dell.prototype.apm.instrumentation.Premain").info("Premain.premain() was called.");
+        ClassFileTransformer trans = new TransformerAgent();
+        inst.addTransformer(trans);
+    }
+
+}

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10sp"
+    android:orientation="vertical" 
+    android:background="@null">
+      
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="7.5sp"
+	    android:layout_marginRight="7.5sp"
+	    android:layout_marginTop="35sp"
+	    android:background="@drawable/diary_buttom_bar" >
+	
+		<TextView
+		    android:id="@+id/diary_namelabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginTop="16dp"
+			android:layout_marginLeft="60sp"
+		    android:singleLine="true"
+		    android:text="123123123"
+		    android:textColor="@android:color/darker_gray"
+		    android:textSize="13sp" />    
+	    
+		<TextView
+		    android:id="@+id/diary_title"
+		    android:text=""
+	        android:layout_marginLeft="15sp"
+	        android:layout_marginTop="40sp"
+		    android:layout_height="wrap_content"
+		    android:layout_width="180dp"
+		    android:textSize="18sp"
+		    android:textColor="@android:color/darker_gray"/>
+		
+		<ImageView
+		    android:id="@+id/diary_new"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@+id/diary_title"
+		    android:layout_marginLeft="10sp"
+		    android:layout_toRightOf="@id/diary_title"
+		    android:background="@drawable/diary_new_symbol" 
+		    android:visibility="invisible"
+		    />
+		
+		<TextView
+		    
+		    android:id="@+id/diary_date"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignBottom="@id/diary_namelabel"
+		    android:layout_marginRight="20sp"
+		    android:textColor="@android:color/darker_gray"
+		    android:textSize="14sp"/>
+		
+		<TextView
+		    android:id="@+id/diary_content"
+		    android:layout_below="@id/diary_title"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+	        android:layout_marginTop="5sp"
+		    android:layout_marginLeft="10sp"
+		    android:layout_marginRight="10sp"
+		    android:layout_marginBottom="10sp"
+		    android:textSize="15sp"
+		    android:textColor="@android:color/black"
+		    android:singleLine="false"
+		    android:maxLines="3"/>
+	
+			<RelativeLayout
+			    android:id="@+id/diary_button_bar"
+			    android:layout_width="match_parent"
+			    android:layout_height="35sp"
+			    android:layout_below="@id/diary_content"
+			    android:background="@drawable/diary_buttom_bar"
+			    android:orientation="horizontal" >
+			    <LinearLayout 
+			        android:orientation="horizontal"
+			        android:gravity="center"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent">
+				<ImageView
+				    android:id="@+id/diary_editButton"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:clickable="true"
+				    android:src="@drawable/diary_modify_button_selector"
+				    android:layout_gravity="left"
+				    android:layout_weight="1.0"
+				       android:visibility="invisible"
+				    />
+				
+				<ImageView
+			        android:id="@+id/diary_deleteButton"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:clickable="true"
+			        android:src="@drawable/diary_delete_button_selector" 
+			            android:visibility="invisible"
+			         android:layout_weight="1.0"
+			   		/>
+				
+				<ImageView
+				     android:visibility="gone"
+				    android:id="@+id/diary_commentButton"
+				    android:layout_height="wrap_content"
+				    android:layout_width="80sp"
+				    android:src="@drawable/diary_comment_button"
+				    android:layout_gravity="right"
+				     android:layout_weight="1.0"
+				    android:clickable="true"/>
+				</LinearLayout>
+			</RelativeLayout>
+		
+	</RelativeLayout>
+	
+	
+	<ImageView
+	    android:id="@+id/diary_headphoto"
+	    android:clickable="true"
+	    android:layout_width="52dp"
+		android:layout_height="52dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginTop="5dp"
+	   
+	 />
+	    
+</RelativeLayout>
